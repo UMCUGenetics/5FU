@@ -4,70 +4,12 @@ library(ggpubr)
 library(dplyr)
 library(BSgenome)
 library(ggplot2)
-#biocLite("BSgenome.Hsapiens.UCSC.hg19")
 ref_genome <- "BSgenome.Hsapiens.UCSC.hg19"
 
 library(nlme)
 library(RColorBrewer)
 
 
-
-
-
-########################
-########################
-####COLON
-########################
-########################
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/somatic_clinical_colon.RData")
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/somatic_clinical_colon_NMF10.RData")
-
-dirpath="~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/plots/DR47/colon2/"
-plot_name="denovo_NMF_10"
-
-#genome_length <- sum(as.numeric(as.vector(as.data.frame(seqlengths(Hsapiens))[1:24,])))/1000000
-genome_length <- 2858674662/1000000
-
-somatic_clinical_colon$TMB = somatic_clinical_colon$mut_load/genome_length
-somatic_clinical_subset = somatic_clinical_colon %>% 
-  filter(primaryTumorLocation == "Colon/Rectum",Fluorouracil != "-2",TMB <=10)
-
-somatic_clinical_subset %>% group_by(Fluorouracil) %>%
-  dplyr::summarize(count = n(), 
-            mean_sign = mean(NMF_colon_C),median_sign = median(NMF_colon_C), SD_sign = sd(NMF_colon_C),
-            sum_sign=sum(NMF_colon_C),max_sign=max(NMF_colon_C),
-            mean_mut_load = mean(mut_load), SD_mut_load = sd(mut_load),
-            median_mut_load = median(mut_load),
-            sum_mut_load=sum(mut_load))
-
-
-########################
-########################
-####BREAST
-########################
-########################
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/somatic_clinical_breast_NMF10.RData")
-dirpath="~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/plots/DR47/breast2/"
-plot_name="denovo_NMF_10"
-
-
-#genome_length <- sum(as.numeric(as.vector(as.data.frame(seqlengths(Hsapiens))[1:24,])))/1000000
-genome_length <- 2858674662/1000000
-somatic_clinical_breast$TMB = somatic_clinical_breast$mut_load/genome_length
-somatic_clinical_subset = somatic_clinical_breast %>% 
-  filter(primaryTumorLocation == "Breast",Fluorouracil != "-2",TMB <=10)
-
-somatic_clinical_subset %>% group_by(Fluorouracil) %>%
-  dplyr::summarize(count = n(), 
-            mean_sign = mean(NMF_breast_F),median_sign = median(NMF_breast_F), SD_sign = sd(NMF_breast_F),
-            sum_sign=sum(NMF_breast_F),max_sign=max(NMF_breast_F),min_sign=min(NMF_breast_F),
-            mean_mut_load = mean(mut_load), SD_mut_load = sd(mut_load),
-            median_mut_load = median(mut_load),
-            sum_mut_load=sum(mut_load))
-
-names(somatic_clinical)
-######################
-######################
 
 ########################
 ########################
