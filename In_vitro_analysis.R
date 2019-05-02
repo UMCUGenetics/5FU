@@ -129,12 +129,21 @@ format(diff_pos, scientific = F, digits = 3)
 vcfs_mm_df$diff=diff
 vcfs_mm_df$diff_5FU=diff_pos
 vcfs_mm_df$diff_control=diff_neg
+
+#plot in vito, in vitro and cosmic 17 signatures
+signatures_bucket=data.frame(InVitro_5FU=diff_pos,
+                             InVivo_5FU=as.data.frame(cancer_signatures_denovo)$NMF_H,
+                             COSMIC_17=as.data.frame(cancer_signatures)$Signature.17)
+plot_96_profile(as.matrix(signatures_bucket), condensed = T)
+
+
 #compare in-vitro 5FU signature to COSMIC and de novo obtained signatures
-cos_sim(vcfs_mm_df$diff_5FU, cancer_signatures[,17])
-cos_sim(vcfs_mm_df$diff_5FU, cancer_signatures_denovo[,"NMF_H"])
+cos_sim(signatures_bucket$InVitro_5FU, signatures_bucket$COSMIC_17)
+cos_sim(signatures_bucket$InVitro_5FU, signatures_bucket$InVivo_5FU)
 #pearson
-cor(vcfs_mm_df$diff_5FU, cancer_signatures_denovo, method = c("pearson"))
-cor.test(vcfs_mm_df$diff_5FU, cancer_signatures_denovo[,"NMF_H"], method=c("pearson"))
+cor(signatures_bucket$InVitro_5FU, signatures_bucket$COSMIC_17, method = c("pearson"))
+cor(signatures_bucket$InVitro_5FU, signatures_bucket$InVivo_5FU, method=c("pearson"))
+
 
 
 norm_mut_matrix_new <- as.data.frame(vcfs_mm)
@@ -148,6 +157,7 @@ norm_mut_matrix_new$diff_neg=norm_mut_matrix_new$diff_neg*(-1)
 norm_mut_matrix_new$diff=norm_mut_matrix_new$diff_pos+norm_mut_matrix_new$diff_neg
 norm_mut_matrix_new$diff_pos=NULL
 norm_mut_matrix_new$diff_neg=NULL
+
 
 colnames(norm_mut_matrix_new) = c("5-FU", "Control", "Difference")
 norm_mut_matrix_new
@@ -235,44 +245,15 @@ dev.off()
 ###########
 ##########
 
-
-cos_sim(as.data.frame(cancer_signatures_denovo)[,"NMF_H"],as.data.frame(cancer_signatures)[,"Signature.17"])
+#Cosmic
+cos_sim(signatures_bucket$InVivo_5FU, signatures_bucket$COSMIC_17)
 #pearson
-cor(as.data.frame(cancer_signatures_denovo)[,"NMF_H"],as.data.frame(cancer_signatures)[,"Signature.17"], method = c("pearson"))
-cor.test(as.data.frame(cancer_signatures_denovo)[,"NMF_H"],as.data.frame(cancer_signatures)[,"Signature.17"], method = c("pearson"))
+cor(signatures_bucket$InVivo_5FU, signatures_bucket$COSMIC_17, method = c("pearson"))
 
 
 ###################
 ###################
 #compare signatures
-
-
-#plot signatures
-signatures_bucket=data.frame(InVitro_5FU=diff_pos,
-                InVivo_5FU=as.data.frame(cancer_signatures_denovo)$NMF_H,
-                COSMIC_17=as.data.frame(cancer_signatures)$Signature.17)
-plot_96_profile(as.matrix(signatures_bucket), condensed = T)
-
-cos_sim_samples_signatures = cos_sim_matrix(signatures_bucket, signatures_bucket)
-hclust_cosmic = cluster_signatures(cancer_signatures, method = "average")
-cosmic_order = c("InVitro_5FU","NMF_colon_5FU","NMF_breast_5FU","COSMIC_17")
-cos_sim_matrix.m = melt(cos_sim_samples_signatures)
-colnames(cos_sim_matrix.m) = c("Sample", "Signature", "Cosine.sim")
-cos_sim_matrix.m$Signature = factor(cos_sim_matrix.m$Signature, levels = cosmic_order)
-cos_sim_matrix.m$Sample = factor(cos_sim_matrix.m$Sample, levels = rev(cosmic_order))
-heatmap = ggplot(cos_sim_matrix.m, aes(x=Signature, y=Sample, fill=Cosine.sim, order=Sample)) + 
-  geom_tile(color = "white") +
-  scale_fill_distiller(palette = "YlGnBu", direction = 1, name = "Cosine \nsimilarity", limits = c(0,1.01)) +
-  theme_bw() + 
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  labs(x=NULL, y=NULL)+
-  geom_text(aes(label = round(Cosine.sim, 3)), size = 3)
-
-plot_name="heatmap"
-pdf(sprintf("%s%s.pdf",dirpath,plot_name) , useDingbats = F, width = 5, height = 5) 
-plot(heatmap)
-dev.off()
-
 
 #compare in vitro and in vivo signature to COSMICs
 cos_sim_samples_signatures = cos_sim_matrix(cancer_signatures,as.matrix(signatures_bucket[,c("InVitro_5FU","InVivo_5FU")]))
