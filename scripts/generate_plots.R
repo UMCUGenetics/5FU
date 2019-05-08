@@ -1165,10 +1165,8 @@ plot_TMB_With_and_WO_5FU_comparison(data = plotting_data_cohort,pdf.path=sprintf
 ##SUBCLONAL mutations
 ################
 ################
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/clonality_table_colon_breast_NMF16.RData")
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/clonality_table_colon.Rdata")
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/clonality_table_colon_NMF10.RData")
-load("~/surfdrive/Shared/Bastiaan/Sig17/HMF_data/cohort_analyse/clonality_table_breast_NMF10.RData")
+load("~/surfdrive/Shared/Sig17/HMF_data/cohort_analyse/clonality_table_colon_breast_NMF16.RData")
+
 
 
 
