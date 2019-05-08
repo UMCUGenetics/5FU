@@ -79,7 +79,7 @@ colorpalette = c("Signature.1" =  '#8dd3c7',
 
 
 #import SNVs
-vcf_list <- list.files("~/surfdrive/Shared/Sig17/HMF_data/somatic_organoid_vcfs/HMF_pipeline/filtered_pass/SNVs/filtered_VAF/", pattern = ".vcf", full.names = TRUE)
+vcf_organoids <- list.files("~/surfdrive/Shared/Sig17/HMF_data/somatic_organoid_vcfs/filtered_pass/invitro/organoid_VCFs/", pattern = ".vcf", full.names = TRUE)
 vcf_files_names <- substr(basename(vcf_list), 1, nchar(basename(vcf_list)) - 4) 
 vcf_files_names <- sub("_pass_filtered_SNV_VAF30_70","",vcf_files_names)
 vcfs_SC <- read_vcfs_as_granges(vcf_list, vcf_files_names, genome = ref_genome)
