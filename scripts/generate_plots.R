@@ -16,17 +16,35 @@ library(RColorBrewer)
 ####COLON + BREAST + invitro
 ########################
 ########################
+#load("~/surfdrive/Shared/Sig17/HMF_data/cohort_analyse/somatic_clinical_platinum_based_therapies.RData")
+
 load("~/surfdrive/Shared/Sig17/HMF_data/cohort_analyse/somatic_clinical.RData")
+load("~/surfdrive/Shared/Sig17/HMF_data/cohort_analyse/somatic_clinical_2.RData")
+
 dirpath="~/surfdrive/Shared/Sig17/HMF_data/plots/DR47/COLON_BREAST_INVITRO/COLON/"
 dirpath="~/surfdrive/Shared/Sig17/HMF_data/plots/DR47/COLON_BREAST_INVITRO/BREAST/"
+dirpath="~/surfdrive/Shared/Sig17/HMF_data/plots/DR47/COLON_BREAST_INVITRO/Pancreas/"
+dirpath="~/surfdrive/Shared/Sig17/HMF_data/plots/DR47/COLON_BREAST_INVITRO/Head_neck/"
+dirpath="~/surfdrive/Shared/Sig17/HMF_data/plots/DR47/COLON_BREAST_INVITRO/Stomach/"
+
+dirpath="~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/"
+
 plot_name="denovo_NMF_16"
 
 
 #genome_length <- sum(as.numeric(as.vector(as.data.frame(seqlengths(Hsapiens))[1:24,])))/1000000
 genome_length <- 2858674662/1000000
 somatic_clinical$TMB = somatic_clinical$mut_load/genome_length
+
+names(somatic_clinical)
+unique(somatic_clinical$primaryTumorLocation)
 somatic_clinical_subset = somatic_clinical %>% 
-  filter(primaryTumorLocation == "Breast",Fluorouracil != "-2",TMB <=10) #Colon/Rectum #Breast
+  #filter(primaryTumorLocation == "Biliary",Fluorouracil != "-2",TMB <=10) 
+  filter(primaryTumorLocation == "Colon/Rectum",Fluorouracil != "-2",TMB <=10) 
+  #filter(primaryTumorLocation == "Breast",Fluorouracil != "-2",TMB <=10) 
+
+  #filter(primaryTumorLocation == "Breast",hasSystemicPreTreatment != "NA",TMB <=10) #Colon/Rectum #Breast
+
 
 somatic_clinical_subset %>% group_by(Fluorouracil) %>%
   dplyr::summarize(count = n(), 
@@ -42,7 +60,6 @@ names(somatic_clinical)
 CheckTMB <- function(data = somatic_clinical_subset, pdf.path = NULL){
   
   data <- data %>% filter(Cohort == "Metastatic",hasSystemicPreTreatment=="Yes",TMB <=10) %>% dplyr::select(Fluorouracil,NMF_A:NMF_P) #NMF_colon_A:NMF_colon_J  #NMF_breast_A:NMF_breast_J
-
   data_log <- cbind(data[1],log10(data[-1]+1))
   print("T-test p values")
   ttestresults <- as.list(lapply(names(data)[-1],function(x)
@@ -99,6 +116,9 @@ plotting_data_cohort=data.frame(sampleId=somatic_clinical_subset$sampleId,
                                 Capecitabine=somatic_clinical_subset$Capecitabine_subset,
                                 Fluoruracil=somatic_clinical_subset$Fluorouracil_subset,
                                 Folinic_acid=somatic_clinical_subset$FolinicUacid_subset,
+                                #Carboplatin=somatic_clinical_subset$Carboplatin_nr_predrugs,
+                                #Cisplatin=somatic_clinical_subset$Cisplatin_nr_predrugs,
+                                #Oxaliplatin=somatic_clinical_subset$Oxaliplatin_nr_predrugs,
                                 copyNumber_MTHFR=somatic_clinical_subset$copyNumber_MTHFR,
                                 copyNumber_DPYD=somatic_clinical_subset$copyNumber_DPYD,
                                 copyNumber_TYMP=somatic_clinical_subset$copyNumber_TYMP,
@@ -195,7 +215,6 @@ plotMutLoadAnd5FuContrib(data = plotting_data_cohort,pdf.path=sprintf("%s%s_plot
 
 plot5Fucomparison <- function(data = plotting_data_cohort,mode="absolute",control_cohort="No", pdf.path = NULL){
   data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
-  
   data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
   #check number of samples
   
@@ -235,21 +254,22 @@ plot5Fucomparison <- function(data = plotting_data_cohort,mode="absolute",contro
       Y_pos = Y_pos[1:number]
     }
     
-
     plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo_rel",
               color = "black",fill = "Fluorouracil", palette = c("#00AFBB", "#E7B800", "#FC4E07"))+ 
       #stat_compare_means(aes(label = ..p.signif..))+
-      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 5)+
       xlab(c(""))+
-      ylab(c("5-FU signature relative contribution"))+
+      ylab(c(""))+
       scale_y_sqrt(labels = function(x) paste0(round(x*100), "%"),
                    limits = c(0,round(max(Y_pos))),
                    breaks=c(0.01,0.01,0.05,0.1,0.25,0.5,1))+
       #scale_y_continuous(limits = c(0, 0.5))+
-      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+      theme(axis.text.x = element_text(angle = 45, hjust = 1,size = 15),
+            #axis.ticks.x=element_blank(),
+            #axis.line.x=element_blank(),
             legend.position = "none")+
-      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.02, colour="grey20", size=3.5)
-
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.03, colour="grey20", size=4)
+    
   }
   
   
@@ -354,12 +374,182 @@ plot5Fucomparison <- function(data = plotting_data_cohort,mode="absolute",contro
   if(is.null(pdf.path)){
       return(plot)
     } else {
-      pdf(pdf.path,5,5)
+      pdf(pdf.path,4,4)
       plot(plot)
       dev.off()}
 }
+plot5Fucomparison2 <- function(data = plotting_data_cohort,mode="absolute",control_cohort="No", pdf.path = NULL){
+  data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
+  data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
+  #check number of samples
+  
+  
+  
+  if (mode=="relative")
+  {
+    #select_test
+    #Kruskal???Wallis
+    #res.dunn <- dunnTest(SIGN_5FU_denovo_rel ~ Fluorouracil, data = data, method = "holm")
+    #control_compare <- which(grepl("0 -",res.dunn$res$Comparison))
+    #res <- data.frame(res.dunn$res[control_compare,])
+    
+    #wilcox
+    #wilcox <- wilcox.test(SIGN_5FU_denovo_rel ~ Fluorouracil, data = plotting_data_cohort[which(plotting_data_cohort$Cohort=="Metastatic"),])
+    #print(wilcox$p.value)
+    
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo_rel ~ Fluorouracil_new, data = data));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Fluorouracil_new) %>% tally()
+    
+    set_max <- data %>% group_by(Fluorouracil_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_rel),median_sign = median(SIGN_5FU_denovo_rel), SD_sign = sd(SIGN_5FU_denovo_rel),max(SIGN_5FU_denovo_rel), sum(median_sign,SD_sign)) 
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_rel)`)
+    
+    if(number<4){
+      Y_pos = c(98/100,89/100,84/100)
+      #Y_pos = set_max*Y_pos
+      Y_pos = 1*Y_pos
+      Y_pos = Y_pos[1:number]
+    }
+    
+    plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo_rel",
+                      color = "black",fill = "Fluorouracil", palette = c("#00AFBB", "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      xlab(c(""))+
+      ylab(c("5-FU signature relative contribution"))+
+      scale_y_sqrt(labels = function(x) paste0(round(x*100), "%"),
+                   limits = c(0,round(max(Y_pos))),
+                   breaks=c(0.01,0.01,0.05,0.1,0.25,0.5,1))+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.02, colour="grey20", size=3.5)
+    
+  }
+  
+  
+  if (mode=="absolute" & control_cohort=="No")
+  {
+    data <- data %>% filter(Fluorouracil_new != "Treated naive")
+    data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Not 5-FU pretreated","5-FU pretreated"))
+    data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+    data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Fluorouracil_new, data = data,method = "wilcox.test"));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    #stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    stats_data_plot <- stats_data_plot[,c("V1")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Fluorouracil_new) %>% tally()
+    
+    set_max <- data %>% group_by(Fluorouracil_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_log),median_sign = median(SIGN_5FU_denovo_log), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+    median_plot<-set_max
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+    
+    if(number<4){
+      if(number==2){
+        Y_pos=set_max+0.5
+      }else{
+        Y_pos = c(10/10,9/10,8/10)
+        Y_pos = set_max*Y_pos
+        Y_pos = Y_pos[1:number]
+        Y_pos = Y_pos+0.5
+      }
+    }
+    median_plot$median_2<- round(10^median_plot$median_sign)
+    median_plot$median_3<- round(10^median_plot$median_sign)*0.65
+    plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo",
+                      color = "black",fill = "Fluorouracil_new", palette = c( "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      #stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      stat_compare_means(method = "wilcox.test", label.y = round(Y_pos),size = 4)+
+      xlab(c(""))+
+      ylab(c("5-FU sign abs contribution"))+
+      scale_y_continuous(trans='log10',
+                         breaks=10**(1:round(max(Y_pos))),
+                         limits = c(0.4,10^round(max(Y_pos))),
+                         labels = scales::comma)+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)+
+      geom_text(data = median_plot, aes(label = median_2, y = median_3))
+
+    
+  }
+  if (mode=="absolute" & control_cohort=="Yes")
+  {
+    data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+    data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Fluorouracil_new, data = data,method = "wilcox.test"));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    #stats_data_plot <- stats_data_plot[,c("V1")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Fluorouracil_new) %>% tally()
+    
+    set_max <- data %>% group_by(Fluorouracil_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_log),median_sign = median(SIGN_5FU_denovo_log), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+    
+    if(number<4){
+      if(number==2){
+        Y_pos=set_max+0.5
+      }else{
+        Y_pos = c(10/10,9/10,8/10)
+        Y_pos = set_max*Y_pos
+        Y_pos = Y_pos[1:number]
+        Y_pos = Y_pos+0.75
+      }
+    }
+    
+    plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo",
+                      color = "black",fill = "Fluorouracil_new", palette = c("#00AFBB", "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      #stat_compare_means(method = "wilcox.test", label.y = round(Y_pos),size = 4)+
+      xlab(c(""))+
+      ylab(c("5-FU signature absolute contribution"))+
+      scale_y_continuous(trans='log10',
+                         breaks=10**(1:round(max(Y_pos))),
+                         limits = c(0.4,10^round(max(Y_pos))),
+                         labels = scales::comma)+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)
+    
+  }
+  if(is.null(pdf.path)){
+    return(plot)
+  } else {
+    pdf(pdf.path,4,4)
+    plot(plot)
+    dev.off()}
+}
+
 plot5Fucomparison(data = plotting_data_cohort,mode="relative") 
 plot5Fucomparison(data = plotting_data_cohort,mode="absolute",control_cohort="No")
+plot5Fucomparison2(data = plotting_data_cohort,mode="absolute",control_cohort="No")
+plot5Fucomparison2(data = plotting_data_cohort,mode="absolute",control_cohort="No",pdf.path=sprintf("%s%s_Biliary.pdf",dirpath,plot_name))
 plot5Fucomparison(data = plotting_data_cohort,mode="absolute",control_cohort="Yes")
 plot5Fucomparison(data = plotting_data_cohort,mode="relative",pdf.path=sprintf("%s%s_5-FU_relative_boxplot.pdf",dirpath,plot_name)) 
 plot5Fucomparison(data = plotting_data_cohort,mode="absolute",control_cohort="No",pdf.path=sprintf("%s%s_5-FU_absolute_boxplot.pdf",dirpath,plot_name)) 
@@ -612,7 +802,7 @@ plottreatmenttypecomparison <- function(data = plotting_data_cohort,mode="relati
   if(is.null(pdf.path)){
     return(plot)
   } else {
-    pdf(pdf.path,5,5)
+    pdf(pdf.path,4,4)
     plot(plot)
     dev.off()}
 }
@@ -936,7 +1126,7 @@ plot5Fu_TMB_comparison <- function(data = plotting_data_cohort,control_cohort="N
   if(is.null(pdf.path)){
     return(plot)
   } else {
-    pdf(pdf.path,5,5)
+    pdf(pdf.path,4,4)
     plot(plot)
     dev.off()}
 }
@@ -1006,7 +1196,7 @@ plot5Fu_mut_load_contribution_per_patient <- function(data = plotting_data_cohor
   if(is.null(pdf.path)){
     return(plot)
   } else {
-    pdf(pdf.path,5,5)
+    pdf(pdf.path,4,4)
     plot(plot)
     dev.off()
     }
@@ -1014,6 +1204,7 @@ plot5Fu_mut_load_contribution_per_patient <- function(data = plotting_data_cohor
 plot5Fu_mut_load_contribution_per_patient(data = plotting_data_cohort,binned="No") 
 plot5Fu_mut_load_contribution_per_patient(data = plotting_data_cohort,binned="Yes",pdf.path=sprintf("%s%s_plot5Fu_mut_load_contribution_per_patient_binned.pdf",dirpath,plot_name)) 
 plot5Fu_mut_load_contribution_per_patient(data = plotting_data_cohort,binned="No",pdf.path=sprintf("%s%s_plot5Fu_mut_load_contribution_per_patient.pdf",dirpath,plot_name)) 
+
 
 
 plot_TMB_wo5FU_comparison <- function(data = plotting_data_cohort,pdf.path = NULL){
@@ -1160,6 +1351,13 @@ plot_TMB_With_and_WO_5FU_comparison <- function(data = plotting_data_cohort,pdf.
 plot_TMB_With_and_WO_5FU_comparison(data = plotting_data_cohort) 
 plot_TMB_With_and_WO_5FU_comparison(data = plotting_data_cohort,pdf.path=sprintf("%s%s_plot_TMB_With_and_WO_5FU_comparison.pdf",dirpath,plot_name)) 
 
+
+
+
+
+
+
+
 ################
 ################
 ##SUBCLONAL mutations
@@ -1189,6 +1387,18 @@ clonality_table_transformed=data.frame(sampleId=clonality_table$sampleId,
                                        T2G_rel=clonality_table$`C[T>G]T_rel`,
                                        Fluorouracil=as.factor(clonality_table$Fluorouracil),
                                        mut_load=clonality_table$mut_load)
+
+#filter for samples with more than 5% sign 17 contribution 
+#subsetted_samples <- clonality_table_transformed  %>% dplyr::filter(SIGN_5FU_denovo_rel<0.05,SIGN_5FU_denovo_rel>0.001, Clonality =="SUBCLONAL") %>% dplyr::pull(sampleId)
+#clonality_table_transformed <- clonality_table_transformed[which(clonality_table_transformed$sampleId %in% subsetted_samples),]
+
+sampleIDs_with_subclonal_muts <- clonality_table %>% dplyr::filter(Fluorouracil=="1") %>% dplyr::pull(sampleId)
+clonality_table <- clonality_table[which(clonality_table$sampleId %in% sampleIDs_with_subclonal_muts),]
+clonality_table %>% group_by(clonality) %>% #summarize(n())
+  summarize(mut_load_sum = sum(mut_load), mean=mean(mut_load))
+
+clonality_table_transformed %>% dplyr::filter(Fluorouracil=="1") %>% dplyr::pull(sampleId) -> samples
+length(unique(samples))
 
 plot_clonal_muts <- function(data = clonality_table_transformed,mode="relative", pdf.path = NULL){
   data <- data %>% dplyr::mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
@@ -1222,16 +1432,16 @@ plot_clonal_muts <- function(data = clonality_table_transformed,mode="relative",
     plot <- ggboxplot(data, x = "Clonality", y = "SIGN_5FU_denovo_rel",
                       color = "black",fill = "Clonality", palette = c("#a6611a", "#7570b3"))+ 
       #stat_compare_means(aes(label = ..p.signif..))+
-      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = 0.98,size = 4)+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = 0.88,size = 4)+
       xlab(c(""))+
       ylab(c("5-FU signature relative contribution"))+
-      scale_y_sqrt(labels = function(x) paste0(round(x*100), "%"),
-                   limits = c(0,round(max(Y_pos))),
-                   breaks=c(0.01,0.01,0.05,0.1,0.25,0.5,1))+
-      #scale_y_continuous(limits = c(0, 0.5))+
+      #scale_y_sqrt(labels = function(x) paste0(round(x*100), "%"),
+      #             limits = c(0,round(max(Y_pos))),
+      #             breaks=c(0.01,0.01,0.05,0.1,0.25,0.5,1))+
+      scale_y_continuous(limits = c(-0.03, 0.9))+
       theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")+
-      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.019, colour="grey20", size=4)
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.01, colour="grey20", size=4)
     
   }
   
@@ -1285,7 +1495,8 @@ plot_clonal_muts <- function(data = clonality_table_transformed,mode="relative",
     plot(plot)
     dev.off()}
 }
-plot_clonal_muts(data = clonality_table_transformed,mode="relative",pdf.path=sprintf("%s%s_clonality_relative_boxplot.pdf",dirpath,plot_name)) 
+plot_clonal_muts(data = clonality_table_transformed,mode="relative") 
+plot_clonal_muts(data = clonality_table_transformed,mode="relative",pdf.path=sprintf("%s%s_clonality_relative_boxplot_higher5percent_sign17contribution_breast.pdf",dirpath,plot_name)) 
 
 CheckTMB <- function(data = somatic_clinical_subset, pdf.path = NULL){
   data_meta <- data %>% filter(Cohort == "Metastatic",hasSystemicPreTreatment=="Yes",TMB <=10) %>% dplyr::select(Fluorouracil,NMF_A_rel:NMF_P_rel) #NMF_colon_A:NMF_colon_J  #NMF_breast_A:NMF_breast_J
@@ -1329,4 +1540,564 @@ CheckTMB <- function(data = somatic_clinical_subset, pdf.path = NULL){
   }
   
 }
+
+
+
+plot5Fucomparison <- function(data = plotting_data_cohort,mode="absolute",control_cohort="No", pdf.path = NULL){
+  data <- data %>% mutate(Oxaliplatin_new = ifelse(is.na(Oxaliplatin), "Not Oxaliplatin pretreated", ifelse(Oxaliplatin== "1", "Oxaliplatin pretreated",
+                                                                                                             ifelse(Oxaliplatin== "2", "Oxaliplatin pretreated",
+                                                                                                                    ifelse(Oxaliplatin== "3", "Oxaliplatin pretreated",
+                                                                                                                           ifelse(Oxaliplatin== "4", "Oxaliplatin pretreated","Treated naive"))))))
+  str(data)
+  data$Oxaliplatin_new <- factor(data$Oxaliplatin_new, levels = c("Treated naive","Not Oxaliplatin pretreated","Oxaliplatin pretreated"))
+  #check number of samples
+  
+  
+  
+  if (mode=="relative")
+  {
+    #select_test
+    #Kruskal???Wallis
+    #res.dunn <- dunnTest(SIGN_5FU_denovo_rel ~ Fluorouracil, data = data, method = "holm")
+    #control_compare <- which(grepl("0 -",res.dunn$res$Comparison))
+    #res <- data.frame(res.dunn$res[control_compare,])
+    
+    #wilcox
+    #wilcox <- wilcox.test(SIGN_5FU_denovo_rel ~ Fluorouracil, data = plotting_data_cohort[which(plotting_data_cohort$Cohort=="Metastatic"),])
+    #print(wilcox$p.value)
+    
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo_rel ~ Fluorouracil_new, data = data));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Fluorouracil_new) %>% tally()
+    
+    set_max <- data %>% group_by(Fluorouracil_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_rel),median_sign = median(SIGN_5FU_denovo_rel), SD_sign = sd(SIGN_5FU_denovo_rel),max(SIGN_5FU_denovo_rel), sum(median_sign,SD_sign)) 
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_rel)`)
+    
+    if(number<4){
+      Y_pos = c(98/100,89/100,84/100)
+      #Y_pos = set_max*Y_pos
+      Y_pos = 1*Y_pos
+      Y_pos = Y_pos[1:number]
+    }
+    
+    plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo_rel",
+                      color = "black",fill = "Fluorouracil", palette = c("#00AFBB", "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      xlab(c(""))+
+      ylab(c("5-FU signature relative contribution"))+
+      scale_y_sqrt(labels = function(x) paste0(round(x*100), "%"),
+                   limits = c(0,round(max(Y_pos))),
+                   breaks=c(0.01,0.01,0.05,0.1,0.25,0.5,1))+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.02, colour="grey20", size=3.5)
+    
+  }
+  
+  
+  if (mode=="absolute" & control_cohort=="No")
+  {
+    data <- data %>% filter(Oxaliplatin_new != "Treated naive")
+    data$Oxaliplatin_new <- factor(data$Oxaliplatin_new, levels = c("Not Oxaliplatin pretreated","Oxaliplatin pretreated"))
+    data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+    data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Oxaliplatin_new, data = data,method = "wilcox.test"));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    #stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    stats_data_plot <- stats_data_plot[,c("V1")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Oxaliplatin_new) %>% tally()
+    
+    set_max <- data %>% group_by(Oxaliplatin_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo),median_sign = median(SIGN_5FU_denovo), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+    
+    if(number<4){
+      if(number==2){
+        Y_pos=set_max+0.5
+      }else{
+        Y_pos = c(10/10,9/10,8/10)
+        Y_pos = set_max*Y_pos
+        Y_pos = Y_pos[1:number]
+        Y_pos = Y_pos+0.5
+      }
+    }
+    
+    plot <- ggboxplot(data, x = "Oxaliplatin_new", y = "SIGN_5FU_denovo",
+                      color = "black",fill = "Oxaliplatin_new", palette = c( "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      #stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      stat_compare_means(method = "wilcox.test", label.y = round(5),size = 4)+
+      xlab(c(""))+
+      ylab(c("NMF_I signature absolute contribution"))+
+      scale_y_continuous(trans='log10',
+                         breaks=10**(1:5),
+                         limits = c(0.4,10^5),
+                         labels = scales::comma)+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)
+    
+  }
+  if (mode=="absolute" & control_cohort=="Yes")
+  {
+    data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+    data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+    
+    stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Fluorouracil_new, data = data,method = "wilcox.test"));print(stats_data)
+    stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+    stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+    #stats_data_plot <- stats_data_plot[,c("V1")]
+    stats_data_plot <- lapply(stats_data_plot, as.character)
+    stats_data_plot <- as.list(stats_data_plot)
+    
+    nn = data %>% group_by(Fluorouracil_new) %>% tally()
+    
+    set_max <- data %>% group_by(Fluorouracil_new) %>%
+      dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_log),median_sign = median(SIGN_5FU_denovo_log), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+    set_max <- as.data.frame(set_max)
+    number  <- nrow(set_max)
+    set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+    
+    if(number<4){
+      if(number==2){
+        Y_pos=set_max+0.5
+      }else{
+        Y_pos = c(10/10,9/10,8/10)
+        Y_pos = set_max*Y_pos
+        Y_pos = Y_pos[1:number]
+        Y_pos = Y_pos+0.75
+      }
+    }
+    
+    plot <- ggboxplot(data, x = "Fluorouracil_new", y = "SIGN_5FU_denovo",
+                      color = "black",fill = "Fluorouracil_new", palette = c("#00AFBB", "#E7B800", "#FC4E07"))+ 
+      #stat_compare_means(aes(label = ..p.signif..))+
+      stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+      #stat_compare_means(method = "wilcox.test", label.y = round(Y_pos),size = 4)+
+      xlab(c(""))+
+      ylab(c("5-FU signature absolute contribution"))+
+      scale_y_continuous(trans='log10',
+                         breaks=10**(1:round(max(Y_pos))),
+                         limits = c(0.4,10^round(max(Y_pos))),
+                         labels = scales::comma)+
+      #scale_y_continuous(limits = c(0, 0.5))+
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")+
+      geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)
+    
+  }
+  if(is.null(pdf.path)){
+    return(plot)
+  } else {
+    pdf(pdf.path,5,5)
+    plot(plot)
+    dev.off()}
+}
+
+
+####Rebuttal
+#plot5Fuexposuredays_colon 
+data = plotting_data_cohort,mode="absolute",control_cohort="No", pdf.path = NULL
+  data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
+  data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
+  #check number of samples
+  data <- data %>% filter(Fluorouracil_new != "Treated naive")
+  
+  data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Not 5-FU pretreated","5-FU pretreated"))
+  data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+  data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+  
+  stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Fluorouracil_nr_predrugs, data = data,method = "wilcox.test"));print(stats_data)
+  stats_data <- stats_data[which(stats_data$p.signif != "ns"),]
+  stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+  stats_data_plot <- stats_data_plot[,c("1","2","3","4","7","8")]
+  #stats_data_plot <- stats_data_plot[,c("V1")]
+  stats_data_plot <- lapply(stats_data_plot, as.character)
+  stats_data_plot <- as.list(stats_data_plot)
+  
+  nn = data %>% group_by(Fluorouracil_nr_predrugs) %>% tally()
+  
+  set_max <- data %>% group_by(Fluorouracil_nr_predrugs) %>%
+    dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo),median_sign = median(SIGN_5FU_denovo), SD_sign = sd(SIGN_5FU_denovo),max(SIGN_5FU_denovo), sum(median_sign,SD_sign)) 
+  set_max <- as.data.frame(set_max)
+  number  <- nrow(set_max)
+  set_max <- max(set_max$`max(SIGN_5FU_denovo)`)
+  
+  if(number<4){
+    if(number==2){
+      Y_pos=set_max+0.5
+    }else{
+      Y_pos = c(10/10,9.5/10,9/10,8.5/10,8/10,7.5/10,7/10)
+      Y_pos = set_max*Y_pos
+      Y_pos = Y_pos[1:number]
+      #Y_pos = Y_pos+0.5
+    }
+  }
+  
+  str(fitting_data)
+  fitting_data$Fluorouracil_nr_predrugs
+  fitting_data <- plotting_data_cohort %>% filter(Fluorouracil_nr_predrugs!="4",
+                                                  Fluorouracil_nr_predrugs!="5",
+                                                  Fluorouracil_nr_predrugs!="6",
+                                                  Fluorouracil_nr_predrugs!="-2",)
+  fitting_data$Fluorouracil_nr_predrugs <- factor(fitting_data$Fluorouracil_nr_predrugs, levels = c("0","1","2","3"))
+  
+  fit <- fitting_data%>% lm( SIGN_5FU_denovo ~ Fluorouracil_nr_predrugs, data =.)
+  
+  
+  plot <- ggboxplot(data, x = "Fluorouracil_nr_predrugs", y = "SIGN_5FU_denovo",
+                    color = "black",fill = "Fluorouracil_new", palette = c( "#E7B800", "#FC4E07"))+ 
+    stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+    xlab(c(""))+
+    ylab(c("5-FU signature absolute contribution"))+
+    ##scale_y_continuous(limits = c(0, 0.5))+
+    theme(axis.text.x = element_text(angle = 0),
+          legend.position = "none")+
+    geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-100, colour="grey20", size=4)+
+    stat_smooth(data=fitting_data,aes(x = as.numeric(Fluorouracil_nr_predrugs),
+                                      y = as.numeric(SIGN_5FU_denovo)),method = "lm", col = "red")+
+    labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5),
+                       "Intercept =",signif(fit$coef[[1]],5 ),
+                       " Slope =",signif(fit$coef[[2]], 5),
+                       " P =",signif(summary(fit)$coef[2,4], 5)))
+  pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/Fluorouracil_nr_predrugs_colon.pdf")
+  
+  pdf(pdf.path,7,5)
+  plot(plot)
+  dev.off()
+  
+  exp_days <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% 
+    ggplot() +
+    geom_boxplot(aes(x=as.factor(Fluorouracil_nr_predrugs),
+                     y=Fluorouracil_predrugs_exposure_days));exp_days
+  
+  fit <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% lm( SIGN_5FU_denovo ~ Fluorouracil_predrugs_exposure_days, data =.)
+  exp_days2 <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% 
+    ggplot()+
+    geom_point(aes(x = Fluorouracil_predrugs_exposure_days,
+                   y = SIGN_5FU_denovo,
+                   #fill=as.factor(Fluorouracil_nr_predrugs),
+                   colour=as.factor(Fluorouracil_nr_predrugs)),
+               size=3)+ 
+    labs(colour='# Treatments') +
+    stat_smooth(aes(x = as.numeric(Fluorouracil_predrugs_exposure_days),
+                    y = as.numeric(SIGN_5FU_denovo)),method = "lm", col = "red")+
+    labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5),
+                       "Intercept =",signif(fit$coef[[1]],5 ),
+                       " Slope =",signif(fit$coef[[2]], 5),
+                       " P =",signif(summary(fit)$coef[2,4], 5)));exp_days2
+  pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/Fluorouracil_expdays_colon.pdf")
+  
+  pdf(pdf.path,7,5)
+  plot(exp_days2)
+  dev.off()
+  
+  
+  
+#plot5Fuexposuredays_Breast
+  data = plotting_data_cohort
+  data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
+  data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
+  #check number of samples
+  data <- data %>% filter(Fluorouracil_new != "Treated naive")
+  
+  data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Not 5-FU pretreated","5-FU pretreated"))
+  data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+  data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+  
+  stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ Fluorouracil_nr_predrugs, data = data,method = "wilcox.test"));print(stats_data)
+  stats_data <- stats_data[which(stats_data$p.signif != "ns"),]
+  stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+  stats_data_plot <- stats_data_plot[,c("1","2","3","4","7","8")]
+  #stats_data_plot <- stats_data_plot[,c("V1")]
+  stats_data_plot <- lapply(stats_data_plot, as.character)
+  stats_data_plot <- as.list(stats_data_plot)
+  
+  nn = data %>% group_by(Fluorouracil_nr_predrugs) %>% tally()
+  
+  set_max <- data %>% group_by(Fluorouracil_nr_predrugs) %>%
+    dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo),median_sign = median(SIGN_5FU_denovo), SD_sign = sd(SIGN_5FU_denovo),max(SIGN_5FU_denovo), sum(median_sign,SD_sign)) 
+  set_max <- as.data.frame(set_max)
+  number  <- nrow(set_max)
+  set_max <- max(set_max$`max(SIGN_5FU_denovo)`)
+  
+  if(number<4){
+    if(number==2){
+      Y_pos=set_max+0.5
+    }else{
+      Y_pos = c(10/10,9.5/10,9/10,8.5/10,8/10,7.5/10,7/10)
+      Y_pos = set_max*Y_pos
+      Y_pos = Y_pos[1:number]
+      #Y_pos = Y_pos+0.5
+    }
+  }
+  
+  str(fitting_data)
+  fitting_data$Fluorouracil_nr_predrugs
+  fitting_data <- plotting_data_cohort %>% filter(Fluorouracil_nr_predrugs!="4",
+                                                  Fluorouracil_nr_predrugs!="5",
+                                                  Fluorouracil_nr_predrugs!="6",
+                                                  Fluorouracil_nr_predrugs!="-2",)
+  fitting_data$Fluorouracil_nr_predrugs <- factor(fitting_data$Fluorouracil_nr_predrugs, levels = c("0","1","2","3"))
+  
+  fit <- fitting_data%>% lm( SIGN_5FU_denovo ~ Fluorouracil_nr_predrugs, data =.)
+  
+  
+  plot <- ggboxplot(data, x = "Fluorouracil_nr_predrugs", y = "SIGN_5FU_denovo",
+                    color = "black",fill = "Fluorouracil_new", palette = c( "#E7B800", "#FC4E07"))+ 
+    stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+    xlab(c(""))+
+    ylab(c("5-FU signature absolute contribution"))+
+    ##scale_y_continuous(limits = c(0, 0.5))+
+    theme(axis.text.x = element_text(angle = 0),
+          legend.position = "none")+
+    geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-100, colour="grey20", size=4)+
+    stat_smooth(data=fitting_data,aes(x = as.numeric(Fluorouracil_nr_predrugs),
+                                      y = as.numeric(SIGN_5FU_denovo)),method = "lm", col = "red")+
+    labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5),
+                       "Intercept =",signif(fit$coef[[1]],5 ),
+                       " Slope =",signif(fit$coef[[2]], 5),
+                       " P =",signif(summary(fit)$coef[2,4], 5)))
+  pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/Fluorouracil_nr_predrugs_breast.pdf")
+  
+  pdf(pdf.path,7,5)
+  plot(plot)
+  dev.off()
+  
+  exp_days <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% 
+    ggplot() +
+    geom_boxplot(aes(x=as.factor(Fluorouracil_nr_predrugs),
+                     y=Fluorouracil_predrugs_exposure_days));exp_days
+  
+  fit <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% lm( SIGN_5FU_denovo ~ Fluorouracil_predrugs_exposure_days, data =.)
+  exp_days2 <- plotting_data_cohort %>% filter(Fluorouracil_predrugs_exposure_days<1500) %>% 
+    ggplot()+
+    geom_point(aes(x = Fluorouracil_predrugs_exposure_days,
+                   y = SIGN_5FU_denovo,
+                   #fill=as.factor(Fluorouracil_nr_predrugs),
+                   colour=as.factor(Fluorouracil_nr_predrugs)),
+               size=3)+ 
+    labs(colour='# Treatments') +
+    stat_smooth(aes(x = as.numeric(Fluorouracil_predrugs_exposure_days),
+                    y = as.numeric(SIGN_5FU_denovo)),method = "lm", col = "red")+
+    labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5),
+                       "Intercept =",signif(fit$coef[[1]],5 ),
+                       " Slope =",signif(fit$coef[[2]], 5),
+                       " P =",signif(summary(fit)$coef[2,4], 5)));exp_days2
+  pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/Fluorouracil_expdays_breast.pdf")
+  
+  pdf(pdf.path,7,5)
+  plot(exp_days2)
+  dev.off()
+  
+
+  
+  
+  
+  
+########
+#P53
+
+#characterize p53 IDs
+driverlikelihood <- read.table("~/surfdrive/Shared/Sig17/HMF_data/driverlikelihood.tsv", sep = "\t", header = T)
+names(driverlikelihood)[1] <- "sampleId"
+driverlikelihood %>%
+  dplyr::select(sampleId,gene,o_driverlikelihood) %>%
+  dplyr::filter(gene=="TP53") %>% dplyr::pull(sampleId) -> P53_IDs
+
+ 
+ 
+data = plotting_data_cohort
+data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
+data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
+#check number of samples
+data <- data %>% filter(Fluorouracil_new == "5-FU pretreated", Cohort == "Metastatic")
+data <- data %>% 
+  dplyr::mutate(P53 = ifelse(sampleId %in% P53_IDs, "Mutant", "Wild type"))
+data$P53 <- factor(data$P53, levels = c("Wild type", "Mutant"))
+
+
+data$SIGN_5FU_denovo <- data$SIGN_5FU_denovo+1
+data$SIGN_5FU_denovo_log <- log10(data$SIGN_5FU_denovo)
+
+stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ P53, data = data,method = "wilcox.test"));print(stats_data)
+stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+#stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+stats_data_plot <- stats_data_plot[,c("V1")]
+stats_data_plot <- lapply(stats_data_plot, as.character)
+stats_data_plot <- as.list(stats_data_plot)
+
+nn = data %>% group_by(P53) %>% tally()
+
+set_max <- data %>% group_by(P53) %>%
+  dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_log),median_sign = median(SIGN_5FU_denovo_log), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+set_max <- as.data.frame(set_max)
+number  <- nrow(set_max)
+set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+
+if(number<4){
+  if(number==2){
+    Y_pos=set_max+0.5
+  }else{
+    Y_pos = c(10/10,9/10,8/10)
+    Y_pos = set_max*Y_pos
+    Y_pos = Y_pos[1:number]
+    Y_pos = Y_pos+0.5
+  }
+}
+
+plot <- ggboxplot(data, x = "P53", y = "SIGN_5FU_denovo",
+                  color = "black",fill = "P53", palette = c( "dodgerblue3", "firebrick3"))+ 
+  #stat_compare_means(aes(label = ..p.signif..))+
+  #stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+  stat_compare_means(method = "wilcox.test", label.y = round(Y_pos),size = 4)+
+  xlab(c("P53 mutation status"))+
+  ylab(c("5-FU signature absolute contribution"))+
+  scale_y_continuous(trans='log10',
+                     breaks=10**(1:round(max(Y_pos))),
+                     limits = c(0.4,10^round(max(Y_pos))),
+                     labels = scales::comma)+
+  #scale_y_continuous(limits = c(0, 0.5))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")+
+  geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)
+
+pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/p53_breast.pdf")
+pdf(pdf.path,4,4)
+plot(plot)
+dev.off()
+
+
+
+###########
+##########
+##########
+
+#in for loop
+driverlikelihood <- read.table("~/surfdrive/Shared/Sig17/HMF_data/driverlikelihood.tsv", sep = "\t", header = T)
+names(driverlikelihood)[1] <- "sampleId"
+
+
+data = plotting_data_cohort
+data <- data %>% mutate(Fluorouracil_new = ifelse(Fluorouracil == "0", "Not 5-FU pretreated", ifelse(Fluorouracil == "1", "5-FU pretreated", "Treated naive")))
+data$Fluorouracil_new <- factor(data$Fluorouracil_new, levels = c("Treated naive","Not 5-FU pretreated","5-FU pretreated"))
+#check number of samples
+data_for_loop <- data %>% filter(Fluorouracil_new == "5-FU pretreated", Cohort == "Metastatic")
+
+stats_overview= setNames(data.frame(matrix(ncol = 4, nrow = 0)),c("geneID","WildType","Mutant","Pvalue"))
+for (gene_ID in unique(driverlikelihood$gene)) {
+  #gene_ID="TP53"
+  #print("start new analysis")
+  #print(gene_ID)
+  
+  driverlikelihood %>%
+    dplyr::select(sampleId,gene,o_driverlikelihood) %>%
+    dplyr::filter(gene==gene_ID) %>% dplyr::pull(sampleId) -> gene_ID_patient_list
+  
+  data_in_loop <- data_for_loop %>% 
+    dplyr::mutate(gene_ID = ifelse(sampleId %in% gene_ID_patient_list, "Mutant", "Wild type"))
+  if (as.character(length(unique(data_in_loop$gene_ID))) =="1"){
+    next
+    }
+  data_in_loop$gene_ID <- factor(data_in_loop$gene_ID, levels = c("Wild type", "Mutant"))
+  data_in_loop$SIGN_5FU_denovo <- data_in_loop$SIGN_5FU_denovo+1
+  data_in_loop$SIGN_5FU_denovo_log <- log10(data_in_loop$SIGN_5FU_denovo)
+  stats_data <- as.data.frame(compare_means(SIGN_5FU_denovo ~ gene_ID, data = data_in_loop,method = "wilcox.test"))
+  
+  if(stats_data$p<0.05){
+    print(gene_ID)
+    print(stats_data)}
+  stats_data_plot <- as.data.frame(t(stats_data[,c("group1", "group2")]))
+  #stats_data_plot <- stats_data_plot[,c("V2","V1","V3")]
+  stats_data_plot <- stats_data_plot[,c("V1")]
+  stats_data_plot <- lapply(stats_data_plot, as.character)
+  stats_data_plot <- as.list(stats_data_plot)
+  
+  nn = data_in_loop %>% group_by(gene_ID) %>% tally()
+  
+  stats_overview_gene=NULL
+  stats_overview_gene=setNames(data.frame(matrix(ncol = 4, nrow = 1)),c("geneID","WildType","Mutant","Pvalue"))
+  stats_overview_gene["geneID"] <- gene_ID
+  stats_overview_gene["WildType"] <- as.data.frame(nn) %>% dplyr::filter(gene_ID=="Wild type") %>% dplyr::pull(n)
+  stats_overview_gene["Mutant"] <- as.data.frame(nn) %>% dplyr::filter(gene_ID=="Mutant") %>% dplyr::pull(n)
+  stats_overview_gene["Pvalue"] <- stats_data %>% dplyr::pull(p)
+  stats_overview=rbind(stats_overview,stats_overview_gene)
+  
+  if (stats_data$p>0.05){
+    next
+  }
+  set_max <- data_in_loop %>% group_by(gene_ID) %>%
+    dplyr::summarize(count = n(),mean_sign = mean(SIGN_5FU_denovo_log),median_sign = median(SIGN_5FU_denovo_log), SD_sign = sd(SIGN_5FU_denovo_log),max(SIGN_5FU_denovo_log), sum(median_sign,SD_sign)) 
+  median_plot <- set_max
+  print(set_max)
+  set_max <- as.data.frame(set_max)
+  number  <- nrow(set_max)
+  set_max <- max(set_max$`max(SIGN_5FU_denovo_log)`)
+  
+  median_plot$median_2<- round(10^median_plot$median_sign)
+  median_plot$median_3<- round(10^median_plot$median_sign)*0.65
+  
+  if(number<4){
+    if(number==2){
+      Y_pos=set_max+0.5
+    }else{
+      Y_pos = c(10/10,9/10,8/10)
+      Y_pos = set_max*Y_pos
+      Y_pos = Y_pos[1:number]
+      Y_pos = Y_pos+0.5
+    }
+  }
+  
+  plot <- ggboxplot(data_in_loop, x = "gene_ID", y = "SIGN_5FU_denovo",
+                    color = "black",fill = "gene_ID", palette = c( "dodgerblue3", "firebrick3"))+ 
+    #stat_compare_means(aes(label = ..p.signif..))+
+    #stat_compare_means(method = "wilcox.test",comparisons = stats_data_plot, label.y = Y_pos,size = 4)+
+    stat_compare_means(method = "wilcox.test", label.y = round(Y_pos),size = 4)+
+    xlab(sprintf("%s mutation status",gene_ID))+
+    ylab(c("5-FU signature absolute contribution"))+
+    scale_y_continuous(trans='log10',
+                       breaks=10**(1:round(max(Y_pos))),
+                       limits = c(0.4,10^round(max(Y_pos))),
+                       labels = scales::comma)+
+    #scale_y_continuous(limits = c(0, 0.5))+
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),
+          legend.position = "none")+
+    geom_text(data=nn, aes(label=paste0("n=", nn$n)),  y=-0.4, colour="grey20", size=4)+
+    geom_text(data = median_plot, aes(label = median_2, y = median_3))
+  
+  
+  tissue_type="colon"
+  pdf.path<-c("~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/colon_p53.pdf")
+  pdf(pdf.path,4,4)
+  plot(plot)
+  dev.off()
+}
+
+stats_overview %>% 
+  dplyr::arrange(Pvalue)%>% 
+  dplyr::mutate(FDR=round(p.adjust(Pvalue,"fdr"), 3),
+                                 bonferroni=round(p.adjust(Pvalue,"bonferroni"), 3)) -> stats_overview
+
+
+write.table(stats_overview, file = "~/surfdrive/Manuscripts/5-fluorouracil/rebuttal/mutation_driver_list_platinum_sign_pan_cancer", sep = "\t", quote = F, row.names = F)
+
+
+
 
