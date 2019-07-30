@@ -1,0 +1,1501 @@
+AnonymousId	Cohort	primaryTumorLocation	Fluorouracil_treated
+HMF002027A	Metastatic	Colon/Rectum	YES
+HMF001965A	Metastatic	Colon/Rectum	YES
+HMF000957A	Metastatic	Colon/Rectum	YES
+HMF002994A	Metastatic	Colon/Rectum	YES
+HMF002776A	Metastatic	Colon/Rectum	YES
+HMF002800A	Metastatic	Colon/Rectum	YES
+HMF002273A	Metastatic	Colon/Rectum	YES
+HMF000882A	Metastatic	Colon/Rectum	NO
+HMF003298A	Metastatic	Colon/Rectum	YES
+HMF001060A	Metastatic	Colon/Rectum	YES
+HMF000272A	Metastatic	Colon/Rectum	YES
+HMF001438A	Metastatic	Colon/Rectum	YES
+HMF002107B	Metastatic	Colon/Rectum	YES
+HMF003717A	Metastatic	Colon/Rectum	YES
+HMF002302A	Metastatic	Colon/Rectum	YES
+HMF001840A	Metastatic	Colon/Rectum	YES
+HMF002627A	Metastatic	Colon/Rectum	YES
+HMF001704A	Metastatic	Colon/Rectum	YES
+HMF000814A	Metastatic	Colon/Rectum	YES
+HMF000349A	Metastatic	Colon/Rectum	NO
+HMF001287A	Metastatic	Colon/Rectum	YES
+HMF001658A	Metastatic	Colon/Rectum	NO
+HMF003234A	Metastatic	Colon/Rectum	YES
+HMF001303A	Metastatic	Colon/Rectum	NO
+HMF001927A	Metastatic	Colon/Rectum	YES
+HMF000167A	Metastatic	Colon/Rectum	YES
+HMF003543A	Metastatic	Colon/Rectum	YES
+HMF003777A	Metastatic	Colon/Rectum	YES
+HMF002620A	Metastatic	Colon/Rectum	NO
+HMF002811A	Metastatic	Colon/Rectum	YES
+HMF001583A	Metastatic	Colon/Rectum	YES
+HMF002865A	Metastatic	Colon/Rectum	YES
+HMF003669A	Metastatic	Colon/Rectum	YES
+HMF000606A	Metastatic	Colon/Rectum	NO
+HMF003653A	Metastatic	Colon/Rectum	NO
+HMF003137A	Metastatic	Colon/Rectum	NO
+HMF003067A	Metastatic	Colon/Rectum	YES
+HMF000008B	Metastatic	Colon/Rectum	NO
+HMF003786A	Metastatic	Colon/Rectum	YES
+HMF003334A	Metastatic	Colon/Rectum	NO
+HMF003169A	Metastatic	Colon/Rectum	NO
+HMF003048A	Metastatic	Colon/Rectum	YES
+HMF002128A	Metastatic	Colon/Rectum	YES
+HMF002246A	Metastatic	Colon/Rectum	YES
+HMF001548A	Metastatic	Colon/Rectum	NO
+HMF001724A	Metastatic	Colon/Rectum	YES
+HMF002787A	Metastatic	Colon/Rectum	YES
+HMF000756A	Metastatic	Colon/Rectum	YES
+HMF001856A	Metastatic	Colon/Rectum	YES
+HMF002716A	Metastatic	Colon/Rectum	YES
+HMF001297A	Metastatic	Colon/Rectum	YES
+HMF002492A	Metastatic	Colon/Rectum	YES
+HMF001832B	Metastatic	Colon/Rectum	YES
+HMF001951A	Metastatic	Colon/Rectum	YES
+HMF003805A	Metastatic	Colon/Rectum	YES
+HMF003289A	Metastatic	Colon/Rectum	YES
+HMF003177A	Metastatic	Colon/Rectum	NO
+HMF000231A	Metastatic	Colon/Rectum	YES
+HMF003365A	Metastatic	Colon/Rectum	NO
+HMF002606A	Metastatic	Colon/Rectum	YES
+HMF002555A	Metastatic	Colon/Rectum	YES
+HMF000355A	Metastatic	Colon/Rectum	YES
+HMF001142A	Metastatic	Colon/Rectum	NO
+HMF002777A	Metastatic	Colon/Rectum	YES
+HMF003627A	Metastatic	Colon/Rectum	YES
+HMF002194A	Metastatic	Colon/Rectum	NO
+HMF003204A	Metastatic	Colon/Rectum	YES
+HMF001444A	Metastatic	Colon/Rectum	YES
+HMF002429A	Metastatic	Colon/Rectum	YES
+HMF002679A	Metastatic	Colon/Rectum	YES
+HMF000037A	Metastatic	Colon/Rectum	YES
+HMF000852A	Metastatic	Colon/Rectum	YES
+HMF002281A	Metastatic	Colon/Rectum	YES
+HMF000753A	Metastatic	Colon/Rectum	NO
+HMF000760A	Metastatic	Colon/Rectum	NO
+HMF000036A	Metastatic	Colon/Rectum	NO
+HMF000869A	Metastatic	Colon/Rectum	NO
+HMF001022A	Metastatic	Colon/Rectum	NO
+HMF000011A	Metastatic	Colon/Rectum	YES
+HMF000166A	Metastatic	Colon/Rectum	YES
+HMF001205A	Metastatic	Colon/Rectum	YES
+HMF000207A	Metastatic	Colon/Rectum	YES
+HMF001869A	Metastatic	Colon/Rectum	NO
+HMF001026A	Metastatic	Colon/Rectum	YES
+HMF001653A	Metastatic	Colon/Rectum	NO
+HMF000853A	Metastatic	Colon/Rectum	NO
+HMF002005A	Metastatic	Colon/Rectum	YES
+HMF003188A	Metastatic	Colon/Rectum	YES
+HMF000741A	Metastatic	Colon/Rectum	YES
+HMF000595A	Metastatic	Colon/Rectum	NO
+HMF000614A	Metastatic	Colon/Rectum	NO
+HMF002748A	Metastatic	Colon/Rectum	YES
+HMF003533A	Metastatic	Colon/Rectum	NO
+HMF002998A	Metastatic	Colon/Rectum	YES
+HMF003061A	Metastatic	Colon/Rectum	NO
+HMF003322A	Metastatic	Colon/Rectum	NO
+HMF000559A	Metastatic	Colon/Rectum	YES
+HMF003675A	Metastatic	Colon/Rectum	NO
+HMF001590A	Metastatic	Colon/Rectum	YES
+HMF003218A	Metastatic	Colon/Rectum	YES
+HMF001505A	Metastatic	Colon/Rectum	YES
+HMF002441B	Metastatic	Colon/Rectum	NO
+HMF000032A	Metastatic	Colon/Rectum	YES
+HMF003576A	Metastatic	Colon/Rectum	YES
+HMF002719A	Metastatic	Colon/Rectum	YES
+HMF001049A	Metastatic	Colon/Rectum	YES
+HMF003324A	Metastatic	Colon/Rectum	NO
+HMF002057A	Metastatic	Colon/Rectum	YES
+HMF001783A	Metastatic	Colon/Rectum	NO
+HMF001498A	Metastatic	Colon/Rectum	YES
+HMF001277A	Metastatic	Colon/Rectum	YES
+HMF002361B	Metastatic	Colon/Rectum	YES
+HMF003759A	Metastatic	Colon/Rectum	YES
+HMF000630A	Metastatic	Colon/Rectum	NO
+HMF000369A	Metastatic	Colon/Rectum	YES
+HMF002213A	Metastatic	Colon/Rectum	NO
+HMF002000A	Metastatic	Colon/Rectum	YES
+HMF002082A	Metastatic	Colon/Rectum	YES
+HMF000285A	Metastatic	Colon/Rectum	YES
+HMF001270A	Metastatic	Colon/Rectum	YES
+HMF003610A	Metastatic	Colon/Rectum	NO
+HMF001830A	Metastatic	Colon/Rectum	YES
+HMF001408A	Metastatic	Colon/Rectum	NO
+HMF003305A	Metastatic	Colon/Rectum	YES
+HMF001238A	Metastatic	Colon/Rectum	NO
+HMF000642A	Metastatic	Colon/Rectum	NO
+HMF002949A	Metastatic	Colon/Rectum	NO
+HMF002897A	Metastatic	Colon/Rectum	YES
+HMF000527A	Metastatic	Colon/Rectum	YES
+HMF000566A	Metastatic	Colon/Rectum	YES
+HMF000752A	Metastatic	Colon/Rectum	YES
+HMF003445A	Metastatic	Colon/Rectum	YES
+HMF003690A	Metastatic	Colon/Rectum	YES
+HMF002847A	Metastatic	Colon/Rectum	YES
+HMF000845A	Metastatic	Colon/Rectum	YES
+HMF002332A	Metastatic	Colon/Rectum	YES
+HMF001370A	Metastatic	Colon/Rectum	NO
+HMF001085A	Metastatic	Colon/Rectum	NO
+HMF000049A	Metastatic	Colon/Rectum	YES
+HMF003208A	Metastatic	Colon/Rectum	YES
+HMF000015A	Metastatic	Colon/Rectum	YES
+HMF001176A	Metastatic	Colon/Rectum	YES
+HMF003440A	Metastatic	Colon/Rectum	YES
+HMF001424A	Metastatic	Colon/Rectum	YES
+HMF000022A	Metastatic	Colon/Rectum	YES
+HMF001946A	Metastatic	Colon/Rectum	YES
+HMF003349A	Metastatic	Colon/Rectum	YES
+HMF001023A	Metastatic	Colon/Rectum	YES
+HMF000075A	Metastatic	Colon/Rectum	YES
+HMF002810B	Metastatic	Colon/Rectum	YES
+HMF001773A	Metastatic	Colon/Rectum	YES
+HMF003139A	Metastatic	Colon/Rectum	YES
+HMF001307B	Metastatic	Colon/Rectum	NO
+HMF002309A	Metastatic	Colon/Rectum	YES
+HMF003444A	Metastatic	Colon/Rectum	YES
+HMF002660A	Metastatic	Colon/Rectum	YES
+HMF003565A	Metastatic	Colon/Rectum	YES
+HMF003515A	Metastatic	Colon/Rectum	YES
+HMF002694A	Metastatic	Colon/Rectum	YES
+HMF000745A	Metastatic	Colon/Rectum	YES
+HMF001942A	Metastatic	Colon/Rectum	NO
+HMF002834A	Metastatic	Colon/Rectum	YES
+HMF002204A	Metastatic	Colon/Rectum	YES
+HMF001655A	Metastatic	Colon/Rectum	YES
+HMF000930A	Metastatic	Colon/Rectum	NO
+HMF002045A	Metastatic	Colon/Rectum	NO
+HMF001140A	Metastatic	Colon/Rectum	YES
+HMF003215A	Metastatic	Colon/Rectum	YES
+HMF001027A	Metastatic	Colon/Rectum	YES
+HMF002942A	Metastatic	Colon/Rectum	YES
+HMF001097B	Metastatic	Colon/Rectum	YES
+HMF001520A	Metastatic	Colon/Rectum	YES
+HMF000152A	Metastatic	Colon/Rectum	YES
+HMF001210A	Metastatic	Colon/Rectum	YES
+HMF002703A	Metastatic	Colon/Rectum	YES
+HMF002619A	Metastatic	Colon/Rectum	YES
+HMF003029A	Metastatic	Colon/Rectum	YES
+HMF003468A	Metastatic	Colon/Rectum	NO
+HMF003634A	Metastatic	Colon/Rectum	YES
+HMF001767A	Metastatic	Colon/Rectum	NO
+HMF003727A	Metastatic	Colon/Rectum	NO
+HMF000813A	Metastatic	Colon/Rectum	NO
+HMF003782A	Metastatic	Colon/Rectum	NO
+HMF002239A	Metastatic	Colon/Rectum	NO
+HMF000098A	Metastatic	Colon/Rectum	NO
+HMF000067A	Metastatic	Colon/Rectum	NO
+HMF001497A	Metastatic	Colon/Rectum	YES
+HMF001723A	Metastatic	Colon/Rectum	YES
+HMF001104A	Metastatic	Colon/Rectum	YES
+HMF000303A	Metastatic	Colon/Rectum	YES
+HMF001429A	Metastatic	Colon/Rectum	YES
+HMF001688A	Metastatic	Colon/Rectum	NO
+HMF001501A	Metastatic	Colon/Rectum	NO
+HMF000870A	Metastatic	Colon/Rectum	YES
+HMF003051A	Metastatic	Colon/Rectum	NO
+HMF003058A	Metastatic	Colon/Rectum	YES
+HMF002319A	Metastatic	Colon/Rectum	NO
+HMF001319A	Metastatic	Colon/Rectum	YES
+HMF002205A	Metastatic	Colon/Rectum	NO
+HMF003140A	Metastatic	Colon/Rectum	YES
+HMF002422A	Metastatic	Colon/Rectum	NO
+HMF001016A	Metastatic	Colon/Rectum	YES
+HMF002301A	Metastatic	Colon/Rectum	YES
+HMF003483A	Metastatic	Colon/Rectum	NO
+HMF003619A	Metastatic	Colon/Rectum	NO
+HMF002616A	Metastatic	Colon/Rectum	NO
+HMF002053A	Metastatic	Colon/Rectum	YES
+HMF002795A	Metastatic	Colon/Rectum	YES
+HMF003263A	Metastatic	Colon/Rectum	NO
+HMF001922A	Metastatic	Colon/Rectum	YES
+HMF002100A	Metastatic	Colon/Rectum	NO
+HMF003661A	Metastatic	Colon/Rectum	YES
+HMF001652A	Metastatic	Colon/Rectum	NO
+HMF001544A	Metastatic	Colon/Rectum	YES
+HMF000898A	Metastatic	Colon/Rectum	YES
+HMF001486A	Metastatic	Colon/Rectum	YES
+HMF000062A	Metastatic	Colon/Rectum	YES
+HMF000833A	Metastatic	Colon/Rectum	NO
+HMF003682A	Metastatic	Colon/Rectum	NO
+HMF003187A	Metastatic	Colon/Rectum	YES
+HMF000041A	Metastatic	Colon/Rectum	YES
+HMF001284A	Metastatic	Colon/Rectum	YES
+HMF002138A	Metastatic	Colon/Rectum	YES
+HMF003558A	Metastatic	Colon/Rectum	YES
+HMF001005A	Metastatic	Colon/Rectum	YES
+HMF001872A	Metastatic	Colon/Rectum	NO
+HMF001328A	Metastatic	Colon/Rectum	NO
+HMF003522A	Metastatic	Colon/Rectum	YES
+HMF003713A	Metastatic	Colon/Rectum	YES
+HMF000747A	Metastatic	Colon/Rectum	YES
+HMF003729A	Metastatic	Colon/Rectum	NO
+HMF000664A	Metastatic	Colon/Rectum	YES
+HMF002861A	Metastatic	Colon/Rectum	NO
+HMF002467A	Metastatic	Colon/Rectum	YES
+HMF001577A	Metastatic	Colon/Rectum	YES
+HMF001859A	Metastatic	Colon/Rectum	NO
+HMF003492A	Metastatic	Colon/Rectum	NO
+HMF000441A	Metastatic	Colon/Rectum	NO
+HMF002884A	Metastatic	Colon/Rectum	YES
+HMF000202A	Metastatic	Colon/Rectum	YES
+HMF002864B	Metastatic	Colon/Rectum	YES
+HMF001051A	Metastatic	Colon/Rectum	YES
+HMF001762A	Metastatic	Colon/Rectum	YES
+HMF000388A	Metastatic	Colon/Rectum	YES
+HMF003388A	Metastatic	Colon/Rectum	YES
+HMF000541A	Metastatic	Colon/Rectum	YES
+HMF001944A	Metastatic	Colon/Rectum	YES
+HMF000402A	Metastatic	Colon/Rectum	YES
+HMF002284A	Metastatic	Colon/Rectum	YES
+HMF000287A	Metastatic	Colon/Rectum	YES
+HMF001512A	Metastatic	Colon/Rectum	NO
+HMF003394A	Metastatic	Colon/Rectum	YES
+HMF001156A	Metastatic	Colon/Rectum	NO
+HMF000689A	Metastatic	Colon/Rectum	YES
+HMF000461A	Metastatic	Colon/Rectum	YES
+HMF000365A	Metastatic	Colon/Rectum	YES
+HMF002460A	Metastatic	Colon/Rectum	NO
+HMF001346A	Metastatic	Colon/Rectum	NO
+HMF003606A	Metastatic	Colon/Rectum	YES
+HMF000720A	Metastatic	Colon/Rectum	NO
+HMF003470A	Metastatic	Colon/Rectum	YES
+HMF000136A	Metastatic	Colon/Rectum	NO
+HMF001601A	Metastatic	Colon/Rectum	NO
+HMF002739A	Metastatic	Colon/Rectum	NO
+HMF001674A	Metastatic	Colon/Rectum	NO
+HMF000523B	Metastatic	Colon/Rectum	YES
+HMF003344A	Metastatic	Colon/Rectum	NO
+HMF002451A	Metastatic	Colon/Rectum	YES
+HMF003014A	Metastatic	Colon/Rectum	YES
+HMF002236A	Metastatic	Colon/Rectum	YES
+HMF002804A	Metastatic	Colon/Rectum	NO
+HMF000821A	Metastatic	Colon/Rectum	NO
+HMF000286A	Metastatic	Colon/Rectum	YES
+HMF002059A	Metastatic	Colon/Rectum	NO
+HMF000742A	Metastatic	Colon/Rectum	YES
+HMF003725A	Metastatic	Colon/Rectum	NO
+HMF003539A	Metastatic	Colon/Rectum	NO
+HMF001695A	Metastatic	Colon/Rectum	NO
+HMF000552A	Metastatic	Colon/Rectum	NO
+HMF003086A	Metastatic	Colon/Rectum	YES
+HMF000042A	Metastatic	Colon/Rectum	YES
+HMF002017B	Metastatic	Colon/Rectum	YES
+HMF000850A	Metastatic	Colon/Rectum	NO
+HMF001342A	Metastatic	Colon/Rectum	YES
+HMF001998A	Metastatic	Colon/Rectum	YES
+HMF000229A	Metastatic	Colon/Rectum	NO
+HMF003352A	Metastatic	Colon/Rectum	YES
+HMF003404A	Metastatic	Colon/Rectum	YES
+HMF001146A	Metastatic	Colon/Rectum	NO
+HMF003262A	Metastatic	Colon/Rectum	NO
+HMF000799A	Metastatic	Colon/Rectum	NO
+HMF000467A	Metastatic	Colon/Rectum	NO
+HMF000555A	Metastatic	Colon/Rectum	NO
+HMF003285A	Metastatic	Colon/Rectum	NO
+HMF002255A	Metastatic	Colon/Rectum	YES
+HMF002283A	Metastatic	Colon/Rectum	NO
+HMF001404A	Metastatic	Colon/Rectum	NO
+HMF002976A	Metastatic	Colon/Rectum	YES
+HMF001105A	Metastatic	Colon/Rectum	YES
+HMF003133A	Metastatic	Colon/Rectum	NO
+HMF000533A	Metastatic	Colon/Rectum	YES
+HMF001242A	Metastatic	Colon/Rectum	YES
+HMF003696A	Metastatic	Colon/Rectum	YES
+HMF000211A	Metastatic	Colon/Rectum	YES
+HMF001432B	Metastatic	Colon/Rectum	YES
+HMF001255A	Metastatic	Colon/Rectum	YES
+HMF002741A	Metastatic	Colon/Rectum	YES
+HMF000587A	Metastatic	Colon/Rectum	NO
+HMF002502A	Metastatic	Colon/Rectum	YES
+HMF003151A	Metastatic	Colon/Rectum	NO
+HMF000641B	Metastatic	Colon/Rectum	YES
+HMF001301A	Metastatic	Colon/Rectum	YES
+HMF000306A	Metastatic	Colon/Rectum	NO
+HMF002292A	Metastatic	Colon/Rectum	YES
+HMF002907A	Metastatic	Colon/Rectum	NO
+HMF001234A	Metastatic	Colon/Rectum	YES
+HMF003437A	Metastatic	Colon/Rectum	NO
+HMF000859A	Metastatic	Colon/Rectum	YES
+HMF002224A	Metastatic	Colon/Rectum	YES
+HMF000436A	Metastatic	Colon/Rectum	NO
+HMF000469A	Metastatic	Colon/Rectum	NO
+HMF000234A	Metastatic	Colon/Rectum	NO
+HMF003383A	Metastatic	Colon/Rectum	YES
+HMF000596B	Metastatic	Colon/Rectum	YES
+HMF002148B	Metastatic	Colon/Rectum	YES
+HMF001756A	Metastatic	Colon/Rectum	YES
+HMF002769A	Metastatic	Colon/Rectum	YES
+HMF002409A	Metastatic	Colon/Rectum	YES
+HMF001993A	Metastatic	Colon/Rectum	YES
+HMF003371A	Metastatic	Colon/Rectum	NO
+HMF000667A	Metastatic	Colon/Rectum	YES
+HMF002782A	Metastatic	Colon/Rectum	NO
+HMF000779A	Metastatic	Colon/Rectum	NO
+HMF002933A	Metastatic	Colon/Rectum	YES
+HMF000707A	Metastatic	Colon/Rectum	YES
+HMF001499A	Metastatic	Colon/Rectum	NO
+HMF003757A	Metastatic	Colon/Rectum	YES
+HMF001964A	Metastatic	Colon/Rectum	NO
+HMF001649A	Metastatic	Colon/Rectum	YES
+HMF002111A	Metastatic	Colon/Rectum	NO
+HMF001198A	Metastatic	Colon/Rectum	YES
+HMF001302A	Metastatic	Colon/Rectum	YES
+HMF001500A	Metastatic	Colon/Rectum	YES
+HMF002656A	Metastatic	Colon/Rectum	YES
+HMF000023A	Metastatic	Colon/Rectum	YES
+HMF001121A	Metastatic	Colon/Rectum	NO
+HMF003472A	Metastatic	Colon/Rectum	NO
+HMF003235A	Metastatic	Colon/Rectum	NO
+HMF001279A	Metastatic	Colon/Rectum	YES
+HMF002869A	Metastatic	Colon/Rectum	YES
+HMF002480A	Metastatic	Colon/Rectum	YES
+HMF002395A	Metastatic	Colon/Rectum	NO
+X103.CB.M.MF.01.01	Primary	Colon/Rectum	Treated naive
+X104.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X105.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X108.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X109.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X111.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X112.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X113.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X114.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X115.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X116.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X118.CB.P.MF.01.01	Primary	Colon/Rectum	Treated naive
+X118.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X118.CB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X132.ML.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X133.ML.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X134.ML.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X135.ML.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X142.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X148.ML.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X151.ML.M.MF.03.01	Primary	Colon/Rectum	Treated naive
+X151.ML.M.MF.04.01	Primary	Colon/Rectum	Treated naive
+X152.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X154.CB.M.MF.01.01	Primary	Colon/Rectum	Treated naive
+X155.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X159.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X160.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X162.MW.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X163.CB.P.TF.01.01	Primary	Colon/Rectum	Treated naive
+X167.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X170.ML.P.TF.03.01	Primary	Colon/Rectum	Treated naive
+X170.ML.P.TF.04.01	Primary	Colon/Rectum	Treated naive
+X171.ML.M.MF.01.01	Primary	Colon/Rectum	Treated naive
+X171.ML.M.MF.02.01	Primary	Colon/Rectum	Treated naive
+X175.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+X181.MB.P.TF.02.01	Primary	Colon/Rectum	Treated naive
+HMF002764A	Metastatic	Breast	NO
+HMF001423C	Metastatic	Breast	NO
+HMF003422A	Metastatic	Breast	NO
+HMF001916C	Metastatic	Breast	NO
+HMF002324A	Metastatic	Breast	NO
+HMF003684A	Metastatic	Breast	YES
+HMF001401A	Metastatic	Breast	NO
+HMF001390A	Metastatic	Breast	NO
+HMF002735A	Metastatic	Breast	YES
+HMF000987A	Metastatic	Breast	NO
+HMF003586A	Metastatic	Breast	NO
+HMF001774A	Metastatic	Breast	YES
+HMF003726A	Metastatic	Breast	NO
+HMF000273A	Metastatic	Breast	NO
+HMF003399A	Metastatic	Breast	NO
+HMF002560A	Metastatic	Breast	NO
+HMF002270A	Metastatic	Breast	YES
+HMF000769A	Metastatic	Breast	NO
+HMF000710A	Metastatic	Breast	YES
+HMF002358A	Metastatic	Breast	YES
+HMF001585A	Metastatic	Breast	YES
+HMF001764A	Metastatic	Breast	NO
+HMF000761A	Metastatic	Breast	NO
+HMF000577A	Metastatic	Breast	YES
+HMF001736A	Metastatic	Breast	YES
+HMF000411B	Metastatic	Breast	YES
+HMF000331A	Metastatic	Breast	NO
+HMF003314A	Metastatic	Breast	YES
+HMF003113A	Metastatic	Breast	YES
+HMF001031A	Metastatic	Breast	YES
+HMF002080A	Metastatic	Breast	NO
+HMF001244A	Metastatic	Breast	YES
+HMF001851A	Metastatic	Breast	NO
+HMF002935A	Metastatic	Breast	NO
+HMF003168A	Metastatic	Breast	YES
+HMF001428A	Metastatic	Breast	NO
+HMF001654A	Metastatic	Breast	NO
+HMF000021A	Metastatic	Breast	NO
+HMF002454A	Metastatic	Breast	NO
+HMF003376A	Metastatic	Breast	NO
+HMF001933A	Metastatic	Breast	YES
+HMF002568A	Metastatic	Breast	NO
+HMF000415A	Metastatic	Breast	NO
+HMF002655A	Metastatic	Breast	NO
+HMF000624A	Metastatic	Breast	NO
+HMF002579A	Metastatic	Breast	NO
+HMF002846A	Metastatic	Breast	NO
+HMF000907A	Metastatic	Breast	NO
+HMF000727A	Metastatic	Breast	YES
+HMF001298A	Metastatic	Breast	YES
+HMF001443A	Metastatic	Breast	NO
+HMF000997A	Metastatic	Breast	YES
+HMF003062B	Metastatic	Breast	YES
+HMF000085A	Metastatic	Breast	NO
+HMF002765B	Metastatic	Breast	YES
+HMF003771A	Metastatic	Breast	YES
+HMF003077A	Metastatic	Breast	NO
+HMF002350B	Metastatic	Breast	YES
+HMF002042A	Metastatic	Breast	NO
+HMF000295A	Metastatic	Breast	NO
+HMF003753A	Metastatic	Breast	NO
+HMF003090A	Metastatic	Breast	YES
+HMF001418A	Metastatic	Breast	YES
+HMF001473A	Metastatic	Breast	NO
+HMF001940A	Metastatic	Breast	NO
+HMF000195B	Metastatic	Breast	YES
+HMF002985A	Metastatic	Breast	NO
+HMF002086A	Metastatic	Breast	NO
+HMF002307A	Metastatic	Breast	NO
+HMF000314A	Metastatic	Breast	YES
+HMF003456A	Metastatic	Breast	YES
+HMF001820A	Metastatic	Breast	NO
+HMF000718A	Metastatic	Breast	NO
+HMF000713A	Metastatic	Breast	NO
+HMF003392A	Metastatic	Breast	YES
+HMF001969A	Metastatic	Breast	YES
+HMF000374A	Metastatic	Breast	NO
+HMF002813A	Metastatic	Breast	YES
+HMF001641A	Metastatic	Breast	NO
+HMF002796A	Metastatic	Breast	NO
+HMF002743A	Metastatic	Breast	NO
+HMF002025A	Metastatic	Breast	YES
+HMF000668A	Metastatic	Breast	YES
+HMF000785A	Metastatic	Breast	YES
+HMF000625A	Metastatic	Breast	NO
+HMF000817A	Metastatic	Breast	NO
+HMF002608A	Metastatic	Breast	NO
+HMF002360A	Metastatic	Breast	NO
+HMF000309A	Metastatic	Breast	NO
+HMF000515A	Metastatic	Breast	YES
+HMF003368A	Metastatic	Breast	YES
+HMF002267A	Metastatic	Breast	NO
+HMF000857A	Metastatic	Breast	NO
+HMF003670A	Metastatic	Breast	YES
+HMF001478A	Metastatic	Breast	NO
+HMF001730A	Metastatic	Breast	NO
+HMF001725A	Metastatic	Breast	NO
+HMF002756A	Metastatic	Breast	YES
+HMF003783A	Metastatic	Breast	YES
+HMF002244A	Metastatic	Breast	NO
+HMF001271A	Metastatic	Breast	YES
+HMF003754A	Metastatic	Breast	YES
+HMF003449A	Metastatic	Breast	NO
+HMF003001A	Metastatic	Breast	NO
+HMF000941A	Metastatic	Breast	NO
+HMF002073A	Metastatic	Breast	NO
+HMF003362A	Metastatic	Breast	YES
+HMF001533A	Metastatic	Breast	NO
+HMF002744A	Metastatic	Breast	YES
+HMF000558A	Metastatic	Breast	NO
+HMF002461A	Metastatic	Breast	YES
+HMF001061A	Metastatic	Breast	NO
+HMF003252A	Metastatic	Breast	YES
+HMF001902B	Metastatic	Breast	NO
+HMF000818A	Metastatic	Breast	NO
+HMF000144A	Metastatic	Breast	NO
+HMF003446A	Metastatic	Breast	NO
+HMF003498A	Metastatic	Breast	NO
+HMF000077A	Metastatic	Breast	NO
+HMF000119A	Metastatic	Breast	NO
+HMF002311A	Metastatic	Breast	NO
+HMF002554A	Metastatic	Breast	NO
+HMF001190A	Metastatic	Breast	YES
+HMF002405A	Metastatic	Breast	NO
+HMF001341A	Metastatic	Breast	NO
+HMF001125A	Metastatic	Breast	YES
+HMF002862A	Metastatic	Breast	YES
+HMF001391A	Metastatic	Breast	NO
+HMF002995A	Metastatic	Breast	YES
+HMF001671A	Metastatic	Breast	NO
+HMF002414A	Metastatic	Breast	YES
+HMF003450A	Metastatic	Breast	NO
+HMF002063A	Metastatic	Breast	NO
+HMF001546A	Metastatic	Breast	YES
+HMF002290A	Metastatic	Breast	NO
+HMF000806A	Metastatic	Breast	NO
+HMF002199A	Metastatic	Breast	NO
+HMF001323A	Metastatic	Breast	NO
+HMF003241A	Metastatic	Breast	NO
+HMF000196A	Metastatic	Breast	NO
+HMF002932A	Metastatic	Breast	NO
+HMF000323C	Metastatic	Breast	NO
+HMF003507A	Metastatic	Breast	NO
+HMF000492A	Metastatic	Breast	NO
+HMF001466A	Metastatic	Breast	YES
+HMF003206A	Metastatic	Breast	NO
+HMF002501A	Metastatic	Breast	YES
+HMF003096A	Metastatic	Breast	YES
+HMF000982A	Metastatic	Breast	YES
+HMF002135A	Metastatic	Breast	NO
+HMF002759A	Metastatic	Breast	NO
+HMF002578A	Metastatic	Breast	YES
+HMF002692A	Metastatic	Breast	YES
+HMF000781A	Metastatic	Breast	NO
+HMF001384A	Metastatic	Breast	NO
+HMF002093A	Metastatic	Breast	YES
+HMF003181A	Metastatic	Breast	YES
+HMF000901A	Metastatic	Breast	YES
+HMF001684A	Metastatic	Breast	NO
+HMF001405A	Metastatic	Breast	YES
+HMF003666A	Metastatic	Breast	YES
+HMF001066A	Metastatic	Breast	NO
+HMF001191A	Metastatic	Breast	YES
+HMF003429A	Metastatic	Breast	YES
+HMF000807A	Metastatic	Breast	YES
+HMF001930A	Metastatic	Breast	YES
+HMF002386A	Metastatic	Breast	NO
+HMF001454A	Metastatic	Breast	YES
+HMF000758A	Metastatic	Breast	NO
+HMF002484A	Metastatic	Breast	NO
+HMF001615A	Metastatic	Breast	NO
+HMF002725A	Metastatic	Breast	YES
+HMF003745A	Metastatic	Breast	NO
+HMF001729A	Metastatic	Breast	NO
+HMF001455A	Metastatic	Breast	NO
+HMF001160A	Metastatic	Breast	NO
+HMF000371A	Metastatic	Breast	YES
+HMF002680A	Metastatic	Breast	NO
+HMF002625A	Metastatic	Breast	NO
+HMF001293A	Metastatic	Breast	NO
+HMF000656A	Metastatic	Breast	YES
+HMF002529A	Metastatic	Breast	NO
+HMF002397A	Metastatic	Breast	NO
+HMF001962A	Metastatic	Breast	NO
+HMF000476A	Metastatic	Breast	NO
+HMF000145A	Metastatic	Breast	NO
+HMF001718A	Metastatic	Breast	YES
+HMF003703A	Metastatic	Breast	YES
+HMF000693B	Metastatic	Breast	YES
+HMF000919A	Metastatic	Breast	NO
+HMF001689A	Metastatic	Breast	NO
+HMF001204A	Metastatic	Breast	NO
+HMF000950A	Metastatic	Breast	NO
+HMF001780A	Metastatic	Breast	NO
+HMF002312A	Metastatic	Breast	NO
+HMF000397A	Metastatic	Breast	NO
+HMF000403A	Metastatic	Breast	NO
+HMF002965A	Metastatic	Breast	NO
+HMF001905A	Metastatic	Breast	NO
+HMF001516A	Metastatic	Breast	NO
+HMF001019A	Metastatic	Breast	NO
+HMF001569A	Metastatic	Breast	YES
+HMF002596A	Metastatic	Breast	NO
+HMF000887A	Metastatic	Breast	NO
+HMF002600A	Metastatic	Breast	NO
+HMF003599A	Metastatic	Breast	NO
+HMF001280A	Metastatic	Breast	NO
+HMF000395A	Metastatic	Breast	NO
+HMF000937A	Metastatic	Breast	YES
+HMF000545A	Metastatic	Breast	NO
+HMF001982A	Metastatic	Breast	NO
+HMF000733A	Metastatic	Breast	NO
+HMF003003A	Metastatic	Breast	YES
+HMF001711A	Metastatic	Breast	NO
+HMF002147A	Metastatic	Breast	NO
+HMF002562A	Metastatic	Breast	YES
+HMF003370A	Metastatic	Breast	NO
+HMF000735A	Metastatic	Breast	NO
+HMF003581A	Metastatic	Breast	YES
+HMF000133A	Metastatic	Breast	NO
+HMF001263A	Metastatic	Breast	YES
+HMF001970A	Metastatic	Breast	NO
+HMF002081A	Metastatic	Breast	NO
+HMF003531A	Metastatic	Breast	NO
+HMF002559A	Metastatic	Breast	YES
+HMF002391A	Metastatic	Breast	YES
+HMF000228A	Metastatic	Breast	YES
+HMF001607A	Metastatic	Breast	NO
+HMF001219A	Metastatic	Breast	NO
+HMF001721A	Metastatic	Breast	NO
+HMF001157A	Metastatic	Breast	NO
+HMF000381A	Metastatic	Breast	NO
+HMF001860A	Metastatic	Breast	NO
+HMF002201A	Metastatic	Breast	NO
+HMF001430A	Metastatic	Breast	NO
+HMF002589A	Metastatic	Breast	NO
+HMF003264A	Metastatic	Breast	YES
+HMF003417A	Metastatic	Breast	YES
+HMF002003A	Metastatic	Breast	NO
+HMF001145A	Metastatic	Breast	YES
+HMF003227A	Metastatic	Breast	NO
+HMF003562A	Metastatic	Breast	NO
+HMF000239A	Metastatic	Breast	NO
+HMF000184A	Metastatic	Breast	NO
+HMF003049A	Metastatic	Breast	NO
+HMF003473A	Metastatic	Breast	YES
+HMF002122A	Metastatic	Breast	YES
+HMF000255A	Metastatic	Breast	NO
+HMF000731A	Metastatic	Breast	NO
+HMF000354A	Metastatic	Breast	YES
+HMF003303A	Metastatic	Breast	YES
+HMF003800A	Metastatic	Breast	NO
+HMF002721A	Metastatic	Breast	NO
+HMF003720A	Metastatic	Breast	NO
+HMF003460A	Metastatic	Breast	YES
+HMF000583A	Metastatic	Breast	NO
+HMF002831A	Metastatic	Breast	YES
+HMF001535A	Metastatic	Breast	NO
+HMF002364A	Metastatic	Breast	NO
+HMF002878A	Metastatic	Breast	YES
+HMF001172A	Metastatic	Breast	YES
+HMF003034A	Metastatic	Breast	YES
+HMF001690A	Metastatic	Breast	NO
+HMF002569A	Metastatic	Breast	NO
+HMF001041A	Metastatic	Breast	YES
+HMF000014A	Metastatic	Breast	YES
+HMF002327A	Metastatic	Breast	NO
+HMF000366A	Metastatic	Breast	NO
+HMF001225A	Metastatic	Breast	YES
+HMF003025A	Metastatic	Breast	NO
+HMF000851A	Metastatic	Breast	NO
+HMF002599A	Metastatic	Breast	NO
+HMF000651A	Metastatic	Breast	NO
+HMF002540A	Metastatic	Breast	YES
+HMF002280A	Metastatic	Breast	YES
+HMF000086A	Metastatic	Breast	NO
+HMF001076A	Metastatic	Breast	NO
+HMF000828A	Metastatic	Breast	NO
+HMF002809A	Metastatic	Breast	NO
+HMF000497A	Metastatic	Breast	YES
+HMF003645A	Metastatic	Breast	NO
+HMF002801A	Metastatic	Breast	YES
+HMF003283A	Metastatic	Breast	YES
+HMF002652A	Metastatic	Breast	NO
+HMF003099A	Metastatic	Breast	YES
+HMF000171A	Metastatic	Breast	YES
+HMF003443A	Metastatic	Breast	YES
+HMF002151A	Metastatic	Breast	NO
+HMF002524A	Metastatic	Breast	NO
+HMF001559A	Metastatic	Breast	NO
+HMF000629A	Metastatic	Breast	YES
+HMF001349A	Metastatic	Breast	NO
+HMF001868A	Metastatic	Breast	NO
+HMF001502A	Metastatic	Breast	NO
+HMF001275A	Metastatic	Breast	NO
+HMF003174A	Metastatic	Breast	NO
+HMF002448A	Metastatic	Breast	NO
+HMF000087A	Metastatic	Breast	NO
+HMF001468A	Metastatic	Breast	NO
+HMF001801A	Metastatic	Breast	NO
+HMF003427A	Metastatic	Breast	YES
+HMF002233A	Metastatic	Breast	NO
+HMF002463A	Metastatic	Breast	NO
+HMF002873A	Metastatic	Breast	NO
+HMF002521A	Metastatic	Breast	NO
+HMF002412A	Metastatic	Breast	NO
+HMF002258A	Metastatic	Breast	NO
+HMF000435A	Metastatic	Breast	NO
+HMF003730A	Metastatic	Breast	NO
+HMF003291A	Metastatic	Breast	NO
+HMF003414A	Metastatic	Breast	NO
+HMF001161A	Metastatic	Breast	NO
+HMF001836A	Metastatic	Breast	NO
+HMF000452A	Metastatic	Breast	NO
+HMF003691A	Metastatic	Breast	YES
+HMF003331A	Metastatic	Breast	YES
+HMF003665A	Metastatic	Breast	NO
+HMF003064A	Metastatic	Breast	NO
+HMF003563A	Metastatic	Breast	NO
+HMF002221A	Metastatic	Breast	NO
+HMF000390A	Metastatic	Breast	NO
+HMF001802A	Metastatic	Breast	NO
+HMF000101A	Metastatic	Breast	NO
+HMF001945B	Metastatic	Breast	NO
+HMF000867A	Metastatic	Breast	NO
+HMF001036B	Metastatic	Breast	NO
+HMF000035A	Metastatic	Breast	NO
+HMF003213A	Metastatic	Breast	NO
+HMF000360A	Metastatic	Breast	NO
+HMF000708A	Metastatic	Breast	NO
+HMF003055A	Metastatic	Breast	YES
+HMF003315A	Metastatic	Breast	YES
+HMF003391A	Metastatic	Breast	NO
+HMF003804A	Metastatic	Breast	YES
+HMF002268A	Metastatic	Breast	YES
+HMF001042A	Metastatic	Breast	YES
+HMF000903A	Metastatic	Breast	YES
+HMF002241B	Metastatic	Breast	NO
+HMF000989A	Metastatic	Breast	YES
+HMF000179B	Metastatic	Breast	NO
+HMF003676A	Metastatic	Breast	YES
+HMF000797A	Metastatic	Breast	YES
+HMF003325A	Metastatic	Breast	NO
+HMF000054B	Metastatic	Breast	YES
+HMF001427A	Metastatic	Breast	YES
+HMF001779A	Metastatic	Breast	NO
+HMF002824B	Metastatic	Breast	YES
+HMF000417A	Metastatic	Breast	NO
+HMF002917A	Metastatic	Breast	YES
+HMF002481A	Metastatic	Breast	NO
+HMF002539A	Metastatic	Breast	YES
+HMF003792A	Metastatic	Breast	YES
+HMF002526A	Metastatic	Breast	NO
+HMF001727A	Metastatic	Breast	NO
+HMF001491A	Metastatic	Breast	NO
+HMF003154A	Metastatic	Breast	NO
+HMF002325A	Metastatic	Breast	YES
+HMF003092A	Metastatic	Breast	NO
+HMF000953A	Metastatic	Breast	NO
+HMF002535A	Metastatic	Breast	NO
+HMF003511A	Metastatic	Breast	NO
+HMF003105A	Metastatic	Breast	YES
+HMF002952A	Metastatic	Breast	NO
+HMF001064A	Metastatic	Breast	YES
+HMF001504A	Metastatic	Breast	NO
+HMF002988A	Metastatic	Breast	NO
+HMF001496A	Metastatic	Breast	NO
+HMF000150A	Metastatic	Breast	NO
+HMF000235A	Metastatic	Breast	YES
+HMF002638A	Metastatic	Breast	NO
+HMF001128A	Metastatic	Breast	NO
+HMF003459A	Metastatic	Breast	NO
+HMF000766A	Metastatic	Breast	YES
+HMF000130A	Metastatic	Breast	NO
+HMF000768A	Metastatic	Breast	NO
+HMF002114A	Metastatic	Breast	NO
+HMF000657A	Metastatic	Breast	YES
+HMF000620A	Metastatic	Breast	YES
+HMF000100A	Metastatic	Breast	NO
+HMF000221A	Metastatic	Breast	YES
+HMF003104A	Metastatic	Breast	NO
+HMF001103A	Metastatic	Breast	NO
+HMF000266A	Metastatic	Breast	NO
+HMF000193A	Metastatic	Breast	NO
+HMF000959A	Metastatic	Breast	NO
+HMF002887A	Metastatic	Breast	NO
+HMF000116A	Metastatic	Breast	YES
+HMF000915A	Metastatic	Breast	NO
+HMF000370A	Metastatic	Breast	YES
+HMF001340A	Metastatic	Breast	NO
+HMF001339A	Metastatic	Breast	YES
+HMF001931A	Metastatic	Breast	YES
+HMF000908A	Metastatic	Breast	YES
+HMF003780A	Metastatic	Breast	NO
+HMF001536A	Metastatic	Breast	NO
+HMF000170A	Metastatic	Breast	YES
+HMF003626A	Metastatic	Breast	NO
+HMF003296A	Metastatic	Breast	NO
+HMF000965A	Metastatic	Breast	YES
+HMF001580A	Metastatic	Breast	YES
+HMF003102A	Metastatic	Breast	NO
+HMF003389A	Metastatic	Breast	NO
+HMF002252A	Metastatic	Breast	YES
+HMF000848A	Metastatic	Breast	NO
+HMF002424A	Metastatic	Breast	YES
+HMF003448A	Metastatic	Breast	NO
+HMF000504A	Metastatic	Breast	NO
+HMF003071A	Metastatic	Breast	YES
+HMF000802A	Metastatic	Breast	NO
+HMF003614A	Metastatic	Breast	NO
+HMF003401A	Metastatic	Breast	NO
+HMF001713A	Metastatic	Breast	NO
+HMF002904A	Metastatic	Breast	YES
+HMF001017A	Metastatic	Breast	YES
+HMF001084A	Metastatic	Breast	NO
+HMF000968A	Metastatic	Breast	NO
+HMF001033A	Metastatic	Breast	NO
+HMF000637A	Metastatic	Breast	NO
+HMF003287A	Metastatic	Breast	NO
+HMF001521A	Metastatic	Breast	NO
+HMF002611A	Metastatic	Breast	NO
+HMF001619A	Metastatic	Breast	NO
+HMF000218A	Metastatic	Breast	NO
+HMF000567A	Metastatic	Breast	YES
+HMF002980B	Metastatic	Breast	NO
+HMF002181A	Metastatic	Breast	YES
+HMF001841A	Metastatic	Breast	NO
+HMF000025A	Metastatic	Breast	YES
+HMF001330A	Metastatic	Breast	NO
+HMF003319A	Metastatic	Breast	YES
+HMF003568A	Metastatic	Breast	YES
+HMF003513A	Metastatic	Breast	YES
+HMF001745A	Metastatic	Breast	NO
+HMF002285A	Metastatic	Breast	NO
+HMF001471A	Metastatic	Breast	YES
+HMF001228A	Metastatic	Breast	NO
+HMF001778A	Metastatic	Breast	YES
+HMF003796A	Metastatic	Breast	NO
+HMF002470A	Metastatic	Breast	YES
+HMF003573A	Metastatic	Breast	NO
+HMF000143A	Metastatic	Breast	YES
+HMF000598A	Metastatic	Breast	YES
+HMF002037A	Metastatic	Breast	NO
+HMF002915A	Metastatic	Breast	YES
+HMF002761A	Metastatic	Breast	NO
+HMF001794A	Metastatic	Breast	YES
+HMF001900A	Metastatic	Breast	NO
+HMF002265A	Metastatic	Breast	NO
+HMF000045A	Metastatic	Breast	YES
+HMF002841A	Metastatic	Breast	YES
+PD10010a	Primary	Breast	Treated naive
+PD10011a	Primary	Breast	Treated naive
+PD10014a	Primary	Breast	Treated naive
+PD11326a	Primary	Breast	Treated naive
+PD11327a	Primary	Breast	Treated naive
+PD11336a	Primary	Breast	Treated naive
+PD11337a	Primary	Breast	Treated naive
+PD11338a	Primary	Breast	Treated naive
+PD11339a	Primary	Breast	Treated naive
+PD11340a	Primary	Breast	Treated naive
+PD11341a	Primary	Breast	Treated naive
+PD11342a	Primary	Breast	Treated naive
+PD11343a	Primary	Breast	Treated naive
+PD11344a	Primary	Breast	Treated naive
+PD11345a	Primary	Breast	Treated naive
+PD11346a	Primary	Breast	Treated naive
+PD11347a	Primary	Breast	Treated naive
+PD11348a	Primary	Breast	Treated naive
+PD11349a	Primary	Breast	Treated naive
+PD11352a	Primary	Breast	Treated naive
+PD11355a	Primary	Breast	Treated naive
+PD11357a	Primary	Breast	Treated naive
+PD11358a	Primary	Breast	Treated naive
+PD11359a	Primary	Breast	Treated naive
+PD11360a	Primary	Breast	Treated naive
+PD11361a	Primary	Breast	Treated naive
+PD11364a	Primary	Breast	Treated naive
+PD11365a	Primary	Breast	Treated naive
+PD11366a	Primary	Breast	Treated naive
+PD11367a	Primary	Breast	Treated naive
+PD11368a	Primary	Breast	Treated naive
+PD11369a	Primary	Breast	Treated naive
+PD11370a	Primary	Breast	Treated naive
+PD11372a	Primary	Breast	Treated naive
+PD11374a	Primary	Breast	Treated naive
+PD11375a	Primary	Breast	Treated naive
+PD11376a	Primary	Breast	Treated naive
+PD11379a	Primary	Breast	Treated naive
+PD11380a	Primary	Breast	Treated naive
+PD11381a	Primary	Breast	Treated naive
+PD11383a	Primary	Breast	Treated naive
+PD11384a	Primary	Breast	Treated naive
+PD11385a	Primary	Breast	Treated naive
+PD11386a	Primary	Breast	Treated naive
+PD11388a	Primary	Breast	Treated naive
+PD11389a	Primary	Breast	Treated naive
+PD11391a	Primary	Breast	Treated naive
+PD11393a	Primary	Breast	Treated naive
+PD11394a	Primary	Breast	Treated naive
+PD11395a	Primary	Breast	Treated naive
+PD11396a	Primary	Breast	Treated naive
+PD11397a	Primary	Breast	Treated naive
+PD11398a	Primary	Breast	Treated naive
+PD11399a	Primary	Breast	Treated naive
+PD11402a	Primary	Breast	Treated naive
+PD11462a	Primary	Breast	Treated naive
+PD11464a	Primary	Breast	Treated naive
+PD11465a	Primary	Breast	Treated naive
+PD11740a	Primary	Breast	Treated naive
+PD11741a	Primary	Breast	Treated naive
+PD11742a	Primary	Breast	Treated naive
+PD11743a	Primary	Breast	Treated naive
+PD11744a	Primary	Breast	Treated naive
+PD11745a	Primary	Breast	Treated naive
+PD11748a	Primary	Breast	Treated naive
+PD11750a	Primary	Breast	Treated naive
+PD11751a	Primary	Breast	Treated naive
+PD11752a	Primary	Breast	Treated naive
+PD11753a	Primary	Breast	Treated naive
+PD11755a	Primary	Breast	Treated naive
+PD11756a	Primary	Breast	Treated naive
+PD11757a	Primary	Breast	Treated naive
+PD11760a	Primary	Breast	Treated naive
+PD11761a	Primary	Breast	Treated naive
+PD11762a	Primary	Breast	Treated naive
+PD11765a	Primary	Breast	Treated naive
+PD11766a	Primary	Breast	Treated naive
+PD11767a	Primary	Breast	Treated naive
+PD11769a	Primary	Breast	Treated naive
+PD11816a	Primary	Breast	Treated naive
+PD11818a	Primary	Breast	Treated naive
+PD11819a	Primary	Breast	Treated naive
+PD13162a	Primary	Breast	Treated naive
+PD13163a	Primary	Breast	Treated naive
+PD13164a	Primary	Breast	Treated naive
+PD13165a	Primary	Breast	Treated naive
+PD13166a	Primary	Breast	Treated naive
+PD13167a	Primary	Breast	Treated naive
+PD13168a	Primary	Breast	Treated naive
+PD13296a	Primary	Breast	Treated naive
+PD13297a	Primary	Breast	Treated naive
+PD13298a	Primary	Breast	Treated naive
+PD13299a	Primary	Breast	Treated naive
+PD13302a	Primary	Breast	Treated naive
+PD13304a	Primary	Breast	Treated naive
+PD13306a	Primary	Breast	Treated naive
+PD13307a	Primary	Breast	Treated naive
+PD13310a	Primary	Breast	Treated naive
+PD13311a	Primary	Breast	Treated naive
+PD13312a	Primary	Breast	Treated naive
+PD13416a	Primary	Breast	Treated naive
+PD13418a	Primary	Breast	Treated naive
+PD13419a	Primary	Breast	Treated naive
+PD13420a	Primary	Breast	Treated naive
+PD13422a	Primary	Breast	Treated naive
+PD13424a	Primary	Breast	Treated naive
+PD13426a	Primary	Breast	Treated naive
+PD13427a	Primary	Breast	Treated naive
+PD13428a	Primary	Breast	Treated naive
+PD13602a	Primary	Breast	Treated naive
+PD13603a	Primary	Breast	Treated naive
+PD13605a	Primary	Breast	Treated naive
+PD13606a	Primary	Breast	Treated naive
+PD13607a	Primary	Breast	Treated naive
+PD13608a	Primary	Breast	Treated naive
+PD13609a	Primary	Breast	Treated naive
+PD13618a	Primary	Breast	Treated naive
+PD13619a	Primary	Breast	Treated naive
+PD13620a	Primary	Breast	Treated naive
+PD13622a	Primary	Breast	Treated naive
+PD13623a	Primary	Breast	Treated naive
+PD13625a	Primary	Breast	Treated naive
+PD13626a	Primary	Breast	Treated naive
+PD13627a	Primary	Breast	Treated naive
+PD13629a	Primary	Breast	Treated naive
+PD13630a	Primary	Breast	Treated naive
+PD13631a	Primary	Breast	Treated naive
+PD13752a	Primary	Breast	Treated naive
+PD13753a	Primary	Breast	Treated naive
+PD13754a	Primary	Breast	Treated naive
+PD13755a	Primary	Breast	Treated naive
+PD13756a	Primary	Breast	Treated naive
+PD13757a	Primary	Breast	Treated naive
+PD13758a	Primary	Breast	Treated naive
+PD13760a	Primary	Breast	Treated naive
+PD13761a	Primary	Breast	Treated naive
+PD13762a	Primary	Breast	Treated naive
+PD13763a	Primary	Breast	Treated naive
+PD13764a	Primary	Breast	Treated naive
+PD13765a	Primary	Breast	Treated naive
+PD13766a	Primary	Breast	Treated naive
+PD13767a	Primary	Breast	Treated naive
+PD13768a	Primary	Breast	Treated naive
+PD13770a	Primary	Breast	Treated naive
+PD13771a	Primary	Breast	Treated naive
+PD14432a	Primary	Breast	Treated naive
+PD14433a	Primary	Breast	Treated naive
+PD14435a	Primary	Breast	Treated naive
+PD14437a	Primary	Breast	Treated naive
+PD14439a	Primary	Breast	Treated naive
+PD14441a	Primary	Breast	Treated naive
+PD14442a	Primary	Breast	Treated naive
+PD14450a	Primary	Breast	Treated naive
+PD14453a	Primary	Breast	Treated naive
+PD14454a	Primary	Breast	Treated naive
+PD14456a	Primary	Breast	Treated naive
+PD14457a	Primary	Breast	Treated naive
+PD14458a	Primary	Breast	Treated naive
+PD14459a	Primary	Breast	Treated naive
+PD14460a	Primary	Breast	Treated naive
+PD14461a	Primary	Breast	Treated naive
+PD14462a	Primary	Breast	Treated naive
+PD14465a	Primary	Breast	Treated naive
+PD14467a	Primary	Breast	Treated naive
+PD14468a	Primary	Breast	Treated naive
+PD14471a	Primary	Breast	Treated naive
+PD14472a	Primary	Breast	Treated naive
+PD14473a	Primary	Breast	Treated naive
+PD17973a	Primary	Breast	Treated naive
+PD17981a	Primary	Breast	Treated naive
+PD17991a	Primary	Breast	Treated naive
+PD17994a	Primary	Breast	Treated naive
+PD18017a	Primary	Breast	Treated naive
+PD18020a	Primary	Breast	Treated naive
+PD18022a	Primary	Breast	Treated naive
+PD18024a	Primary	Breast	Treated naive
+PD18031a	Primary	Breast	Treated naive
+PD18037a	Primary	Breast	Treated naive
+PD18045a	Primary	Breast	Treated naive
+PD18046a	Primary	Breast	Treated naive
+PD18047a	Primary	Breast	Treated naive
+PD18048a	Primary	Breast	Treated naive
+PD18049a	Primary	Breast	Treated naive
+PD18050a	Primary	Breast	Treated naive
+PD18100a	Primary	Breast	Treated naive
+PD18101a	Primary	Breast	Treated naive
+PD18116a	Primary	Breast	Treated naive
+PD18149a	Primary	Breast	Treated naive
+PD18188a	Primary	Breast	Treated naive
+PD18189a	Primary	Breast	Treated naive
+PD18247a	Primary	Breast	Treated naive
+PD18251a	Primary	Breast	Treated naive
+PD18257a	Primary	Breast	Treated naive
+PD18258a	Primary	Breast	Treated naive
+PD18259a	Primary	Breast	Treated naive
+PD18264a	Primary	Breast	Treated naive
+PD18269a	Primary	Breast	Treated naive
+PD18728a	Primary	Breast	Treated naive
+PD18730a	Primary	Breast	Treated naive
+PD18733a	Primary	Breast	Treated naive
+PD18734a	Primary	Breast	Treated naive
+PD18748a	Primary	Breast	Treated naive
+PD18749a	Primary	Breast	Treated naive
+PD18751a	Primary	Breast	Treated naive
+PD18754a	Primary	Breast	Treated naive
+PD18756a	Primary	Breast	Treated naive
+PD18768a	Primary	Breast	Treated naive
+PD18769a	Primary	Breast	Treated naive
+PD18771a	Primary	Breast	Treated naive
+PD18775a	Primary	Breast	Treated naive
+PD18776a	Primary	Breast	Treated naive
+PD22036a	Primary	Breast	Treated naive
+PD22251a	Primary	Breast	Treated naive
+PD22355a	Primary	Breast	Treated naive
+PD22357a	Primary	Breast	Treated naive
+PD22358a	Primary	Breast	Treated naive
+PD22359a	Primary	Breast	Treated naive
+PD22360a	Primary	Breast	Treated naive
+PD22361a	Primary	Breast	Treated naive
+PD22362a	Primary	Breast	Treated naive
+PD22363a	Primary	Breast	Treated naive
+PD22364a	Primary	Breast	Treated naive
+PD22365a	Primary	Breast	Treated naive
+PD22366a	Primary	Breast	Treated naive
+PD23550a	Primary	Breast	Treated naive
+PD23554a	Primary	Breast	Treated naive
+PD23558a	Primary	Breast	Treated naive
+PD23559a	Primary	Breast	Treated naive
+PD23560a	Primary	Breast	Treated naive
+PD23562a	Primary	Breast	Treated naive
+PD23563a	Primary	Breast	Treated naive
+PD23565a	Primary	Breast	Treated naive
+PD23566a	Primary	Breast	Treated naive
+PD23567a	Primary	Breast	Treated naive
+PD23569a	Primary	Breast	Treated naive
+PD23570a	Primary	Breast	Treated naive
+PD23574a	Primary	Breast	Treated naive
+PD23577a	Primary	Breast	Treated naive
+PD23578a	Primary	Breast	Treated naive
+PD24182a	Primary	Breast	Treated naive
+PD24186a	Primary	Breast	Treated naive
+PD24189a	Primary	Breast	Treated naive
+PD24190a	Primary	Breast	Treated naive
+PD24191a	Primary	Breast	Treated naive
+PD24192a	Primary	Breast	Treated naive
+PD24193a	Primary	Breast	Treated naive
+PD24194a	Primary	Breast	Treated naive
+PD24195a	Primary	Breast	Treated naive
+PD24196a	Primary	Breast	Treated naive
+PD24197a	Primary	Breast	Treated naive
+PD24199a	Primary	Breast	Treated naive
+PD24200a	Primary	Breast	Treated naive
+PD24201a	Primary	Breast	Treated naive
+PD24202a	Primary	Breast	Treated naive
+PD24204a	Primary	Breast	Treated naive
+PD24205a	Primary	Breast	Treated naive
+PD24206a	Primary	Breast	Treated naive
+PD24207a	Primary	Breast	Treated naive
+PD24208a	Primary	Breast	Treated naive
+PD24209a	Primary	Breast	Treated naive
+PD24212a	Primary	Breast	Treated naive
+PD24214a	Primary	Breast	Treated naive
+PD24215a	Primary	Breast	Treated naive
+PD24216a	Primary	Breast	Treated naive
+PD24217a	Primary	Breast	Treated naive
+PD24218a	Primary	Breast	Treated naive
+PD24219a	Primary	Breast	Treated naive
+PD24220a	Primary	Breast	Treated naive
+PD24221a	Primary	Breast	Treated naive
+PD24223a	Primary	Breast	Treated naive
+PD24224a	Primary	Breast	Treated naive
+PD24225a	Primary	Breast	Treated naive
+PD24302a	Primary	Breast	Treated naive
+PD24303a	Primary	Breast	Treated naive
+PD24304a	Primary	Breast	Treated naive
+PD24306a	Primary	Breast	Treated naive
+PD24307a	Primary	Breast	Treated naive
+PD24308a	Primary	Breast	Treated naive
+PD24314a	Primary	Breast	Treated naive
+PD24318a	Primary	Breast	Treated naive
+PD24320a	Primary	Breast	Treated naive
+PD24322a	Primary	Breast	Treated naive
+PD24325a	Primary	Breast	Treated naive
+PD24326a	Primary	Breast	Treated naive
+PD24327a	Primary	Breast	Treated naive
+PD24329a	Primary	Breast	Treated naive
+PD24332a	Primary	Breast	Treated naive
+PD24333a	Primary	Breast	Treated naive
+PD24335a	Primary	Breast	Treated naive
+PD24336a	Primary	Breast	Treated naive
+PD24337a	Primary	Breast	Treated naive
+PD3851a	Primary	Breast	Treated naive
+PD3890a	Primary	Breast	Treated naive
+PD3904a	Primary	Breast	Treated naive
+PD3905a	Primary	Breast	Treated naive
+PD3945a	Primary	Breast	Treated naive
+PD3989a	Primary	Breast	Treated naive
+PD4005a	Primary	Breast	Treated naive
+PD4006a	Primary	Breast	Treated naive
+PD4069a	Primary	Breast	Treated naive
+PD4076a	Primary	Breast	Treated naive
+PD4080a	Primary	Breast	Treated naive
+PD4085a	Primary	Breast	Treated naive
+PD4086a	Primary	Breast	Treated naive
+PD4088a	Primary	Breast	Treated naive
+PD4103a	Primary	Breast	Treated naive
+PD4107a	Primary	Breast	Treated naive
+PD4109a	Primary	Breast	Treated naive
+PD4115a	Primary	Breast	Treated naive
+PD4116a	Primary	Breast	Treated naive
+PD4192a	Primary	Breast	Treated naive
+PD4194a	Primary	Breast	Treated naive
+PD4198a	Primary	Breast	Treated naive
+PD4199a	Primary	Breast	Treated naive
+PD4224a	Primary	Breast	Treated naive
+PD4225a	Primary	Breast	Treated naive
+PD4248a	Primary	Breast	Treated naive
+PD4252a	Primary	Breast	Treated naive
+PD4255a	Primary	Breast	Treated naive
+PD4261a	Primary	Breast	Treated naive
+PD4264a	Primary	Breast	Treated naive
+PD4266a	Primary	Breast	Treated naive
+PD4267a	Primary	Breast	Treated naive
+PD4315a	Primary	Breast	Treated naive
+PD4604a	Primary	Breast	Treated naive
+PD4605a	Primary	Breast	Treated naive
+PD4606a	Primary	Breast	Treated naive
+PD4608a	Primary	Breast	Treated naive
+PD4613a	Primary	Breast	Treated naive
+PD4826a	Primary	Breast	Treated naive
+PD4833a	Primary	Breast	Treated naive
+PD4836a	Primary	Breast	Treated naive
+PD4841a	Primary	Breast	Treated naive
+PD4844a	Primary	Breast	Treated naive
+PD4845a	Primary	Breast	Treated naive
+PD4847a	Primary	Breast	Treated naive
+PD4872a	Primary	Breast	Treated naive
+PD4874a	Primary	Breast	Treated naive
+PD4875a	Primary	Breast	Treated naive
+PD4876a	Primary	Breast	Treated naive
+PD4951a	Primary	Breast	Treated naive
+PD4952a	Primary	Breast	Treated naive
+PD4953a	Primary	Breast	Treated naive
+PD4954a	Primary	Breast	Treated naive
+PD4955a	Primary	Breast	Treated naive
+PD4956a	Primary	Breast	Treated naive
+PD4957a	Primary	Breast	Treated naive
+PD4958a	Primary	Breast	Treated naive
+PD4959a	Primary	Breast	Treated naive
+PD4962a	Primary	Breast	Treated naive
+PD4963a	Primary	Breast	Treated naive
+PD4965a	Primary	Breast	Treated naive
+PD4967a	Primary	Breast	Treated naive
+PD4968a	Primary	Breast	Treated naive
+PD4969a	Primary	Breast	Treated naive
+PD4970a	Primary	Breast	Treated naive
+PD4971a	Primary	Breast	Treated naive
+PD4972a	Primary	Breast	Treated naive
+PD4975a	Primary	Breast	Treated naive
+PD4976a	Primary	Breast	Treated naive
+PD4978a	Primary	Breast	Treated naive
+PD4980a	Primary	Breast	Treated naive
+PD4981a	Primary	Breast	Treated naive
+PD4982a	Primary	Breast	Treated naive
+PD4983a	Primary	Breast	Treated naive
+PD4985a	Primary	Breast	Treated naive
+PD4986a	Primary	Breast	Treated naive
+PD5925a	Primary	Breast	Treated naive
+PD5928a	Primary	Breast	Treated naive
+PD5930a	Primary	Breast	Treated naive
+PD5932a	Primary	Breast	Treated naive
+PD5934a	Primary	Breast	Treated naive
+PD5935a	Primary	Breast	Treated naive
+PD5936a	Primary	Breast	Treated naive
+PD5942a	Primary	Breast	Treated naive
+PD5944a	Primary	Breast	Treated naive
+PD5945a	Primary	Breast	Treated naive
+PD5946a	Primary	Breast	Treated naive
+PD5947a	Primary	Breast	Treated naive
+PD5948a	Primary	Breast	Treated naive
+PD5950a	Primary	Breast	Treated naive
+PD5951a	Primary	Breast	Treated naive
+PD5953a	Primary	Breast	Treated naive
+PD5956a	Primary	Breast	Treated naive
+PD5959a	Primary	Breast	Treated naive
+PD5960a	Primary	Breast	Treated naive
+PD5961a	Primary	Breast	Treated naive
+PD5964a	Primary	Breast	Treated naive
+PD6016a2	Primary	Breast	Treated naive
+PD6041a	Primary	Breast	Treated naive
+PD6042a	Primary	Breast	Treated naive
+PD6043a	Primary	Breast	Treated naive
+PD6044a	Primary	Breast	Treated naive
+PD6045a	Primary	Breast	Treated naive
+PD6046a	Primary	Breast	Treated naive
+PD6047a	Primary	Breast	Treated naive
+PD6048a	Primary	Breast	Treated naive
+PD6049a	Primary	Breast	Treated naive
+PD6404a	Primary	Breast	Treated naive
+PD6406a	Primary	Breast	Treated naive
+PD6409a	Primary	Breast	Treated naive
+PD6410a	Primary	Breast	Treated naive
+PD6411a	Primary	Breast	Treated naive
+PD6412a	Primary	Breast	Treated naive
+PD6413a	Primary	Breast	Treated naive
+PD6414a	Primary	Breast	Treated naive
+PD6415a	Primary	Breast	Treated naive
+PD6416a	Primary	Breast	Treated naive
+PD6417a	Primary	Breast	Treated naive
+PD6418a	Primary	Breast	Treated naive
+PD6422a	Primary	Breast	Treated naive
+PD6466a	Primary	Breast	Treated naive
+PD6684a	Primary	Breast	Treated naive
+PD6711a2	Primary	Breast	Treated naive
+PD6719a	Primary	Breast	Treated naive
+PD6720a	Primary	Breast	Treated naive
+PD6721a	Primary	Breast	Treated naive
+PD6722a	Primary	Breast	Treated naive
+PD6727a	Primary	Breast	Treated naive
+PD6728a	Primary	Breast	Treated naive
+PD6729a	Primary	Breast	Treated naive
+PD6731a	Primary	Breast	Treated naive
+PD6732a	Primary	Breast	Treated naive
+PD6733a	Primary	Breast	Treated naive
+PD7066a	Primary	Breast	Treated naive
+PD7067a	Primary	Breast	Treated naive
+PD7069a	Primary	Breast	Treated naive
+PD7199a	Primary	Breast	Treated naive
+PD7201a	Primary	Breast	Treated naive
+PD7202a	Primary	Breast	Treated naive
+PD7203a	Primary	Breast	Treated naive
+PD7204a	Primary	Breast	Treated naive
+PD7205a	Primary	Breast	Treated naive
+PD7206a	Primary	Breast	Treated naive
+PD7207a	Primary	Breast	Treated naive
+PD7208a	Primary	Breast	Treated naive
+PD7209a	Primary	Breast	Treated naive
+PD7210a	Primary	Breast	Treated naive
+PD7211a	Primary	Breast	Treated naive
+PD7212a	Primary	Breast	Treated naive
+PD7214a	Primary	Breast	Treated naive
+PD7215a	Primary	Breast	Treated naive
+PD7216a	Primary	Breast	Treated naive
+PD7217a	Primary	Breast	Treated naive
+PD7218a	Primary	Breast	Treated naive
+PD7219a	Primary	Breast	Treated naive
+PD7220a	Primary	Breast	Treated naive
+PD7221a	Primary	Breast	Treated naive
+PD7238a	Primary	Breast	Treated naive
+PD7240a	Primary	Breast	Treated naive
+PD7243a	Primary	Breast	Treated naive
+PD7248a	Primary	Breast	Treated naive
+PD7249a	Primary	Breast	Treated naive
+PD7250a	Primary	Breast	Treated naive
+PD7304a	Primary	Breast	Treated naive
+PD7305a	Primary	Breast	Treated naive
+PD7306a	Primary	Breast	Treated naive
+PD7307a	Primary	Breast	Treated naive
+PD7316a	Primary	Breast	Treated naive
+PD7321a	Primary	Breast	Treated naive
+PD7322a	Primary	Breast	Treated naive
+PD7341a	Primary	Breast	Treated naive
+PD7344a	Primary	Breast	Treated naive
+PD7426a	Primary	Breast	Treated naive
+PD7428a	Primary	Breast	Treated naive
+PD7433a	Primary	Breast	Treated naive
+PD8609a	Primary	Breast	Treated naive
+PD8610a	Primary	Breast	Treated naive
+PD8611a	Primary	Breast	Treated naive
+PD8612a	Primary	Breast	Treated naive
+PD8614a	Primary	Breast	Treated naive
+PD8615a	Primary	Breast	Treated naive
+PD8617a	Primary	Breast	Treated naive
+PD8618a	Primary	Breast	Treated naive
+PD8619a	Primary	Breast	Treated naive
+PD8620a	Primary	Breast	Treated naive
+PD8621a	Primary	Breast	Treated naive
+PD8622a	Primary	Breast	Treated naive
+PD8623a	Primary	Breast	Treated naive
+PD8652a2	Primary	Breast	Treated naive
+PD8660a2	Primary	Breast	Treated naive
+PD8828a	Primary	Breast	Treated naive
+PD8830a	Primary	Breast	Treated naive
+PD8832a	Primary	Breast	Treated naive
+PD8964a	Primary	Breast	Treated naive
+PD8965a	Primary	Breast	Treated naive
+PD8969a	Primary	Breast	Treated naive
+PD8973a	Primary	Breast	Treated naive
+PD8977a	Primary	Breast	Treated naive
+PD8978a	Primary	Breast	Treated naive
+PD8979a	Primary	Breast	Treated naive
+PD8980a	Primary	Breast	Treated naive
+PD8981a	Primary	Breast	Treated naive
+PD8982a	Primary	Breast	Treated naive
+PD8984a	Primary	Breast	Treated naive
+PD8995a	Primary	Breast	Treated naive
+PD8996a	Primary	Breast	Treated naive
+PD8997a	Primary	Breast	Treated naive
+PD8998a	Primary	Breast	Treated naive
+PD8999a	Primary	Breast	Treated naive
+PD9000a	Primary	Breast	Treated naive
+PD9001a	Primary	Breast	Treated naive
+PD9002a	Primary	Breast	Treated naive
+PD9004a	Primary	Breast	Treated naive
+PD9009a	Primary	Breast	Treated naive
+PD9064a	Primary	Breast	Treated naive
+PD9065a	Primary	Breast	Treated naive
+PD9067a	Primary	Breast	Treated naive
+PD9193a	Primary	Breast	Treated naive
+PD9464a	Primary	Breast	Treated naive
+PD9467a	Primary	Breast	Treated naive
+PD9539a	Primary	Breast	Treated naive
+PD9541a	Primary	Breast	Treated naive
+PD9544a	Primary	Breast	Treated naive
+PD9567a	Primary	Breast	Treated naive
+PD9569a	Primary	Breast	Treated naive
+PD9570a	Primary	Breast	Treated naive
+PD9571a	Primary	Breast	Treated naive
+PD9572a	Primary	Breast	Treated naive
+PD9573a	Primary	Breast	Treated naive
+PD9574a	Primary	Breast	Treated naive
+PD9575a	Primary	Breast	Treated naive
+PD9576a	Primary	Breast	Treated naive
+PD9577a	Primary	Breast	Treated naive
+PD9578a	Primary	Breast	Treated naive
+PD9579a	Primary	Breast	Treated naive
+PD9581a	Primary	Breast	Treated naive
+PD9582a	Primary	Breast	Treated naive
+PD9584a	Primary	Breast	Treated naive
+PD9585a	Primary	Breast	Treated naive
+PD9589a	Primary	Breast	Treated naive
+PD9591a	Primary	Breast	Treated naive
+PD9592a	Primary	Breast	Treated naive
+PD9593a	Primary	Breast	Treated naive
+PD9595a	Primary	Breast	Treated naive
+PD9597a	Primary	Breast	Treated naive
+PD9599a	Primary	Breast	Treated naive
+PD9600a	Primary	Breast	Treated naive
+PD9604a	Primary	Breast	Treated naive
+PD9605a	Primary	Breast	Treated naive
+PD9606a	Primary	Breast	Treated naive
+PD9694a	Primary	Breast	Treated naive
+PD9696a	Primary	Breast	Treated naive
+PD9702a	Primary	Breast	Treated naive
+PD9752a	Primary	Breast	Treated naive
+PD9754a	Primary	Breast	Treated naive
+PD9755a	Primary	Breast	Treated naive
+PD9756a	Primary	Breast	Treated naive
+PD9759a	Primary	Breast	Treated naive
+PD9760a	Primary	Breast	Treated naive
+PD9761a	Primary	Breast	Treated naive
+PD9842a	Primary	Breast	Treated naive
+PD9843a	Primary	Breast	Treated naive
+PD9844a	Primary	Breast	Treated naive
+PD9845a	Primary	Breast	Treated naive
+PD9847a	Primary	Breast	Treated naive
+HMF001423C	Metastatic_paired_analysis	Breast	YES
+HMF001423B	Metastatic_paired_analysis	Breast	YES
+HMF000299B	Metastatic_paired_analysis	Skin	NO
+HMF000299A	Metastatic_paired_analysis	Skin	NO
+HMF001977A	Metastatic_paired_analysis	Skin	NO
+HMF001977B	Metastatic_paired_analysis	Skin	NO
+HMF000301B	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF000301A	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF003068A	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF003068B	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF001916C	Metastatic_paired_analysis	Breast	NO
+HMF001916B	Metastatic_paired_analysis	Breast	NO
+HMF000854A	Metastatic_paired_analysis	Lung	NO
+HMF000854B	Metastatic_paired_analysis	Lung	NO
+HMF001288B	Metastatic_paired_analysis	Lung	NO
+HMF001288A	Metastatic_paired_analysis	Lung	NO
+HMF001272A	Metastatic_paired_analysis	Skin	NO
+HMF001272B	Metastatic_paired_analysis	Skin	NO
+HMF003648A	Metastatic_paired_analysis	Lung	NO
+HMF003648B	Metastatic_paired_analysis	Lung	NO
+HMF000203B	Metastatic_paired_analysis	Lung	NO
+HMF000203A	Metastatic_paired_analysis	Lung	NO
+HMF000350A	Metastatic_paired_analysis	Lung	NO
+HMF000350B	Metastatic_paired_analysis	Lung	NO
+HMF000028A	Metastatic_paired_analysis	Lung	NO
+HMF000028B	Metastatic_paired_analysis	Lung	NO
+HMF000679A	Metastatic_paired_analysis	Prostate	NO
+HMF000679B	Metastatic_paired_analysis	Prostate	NO
+HMF000589A	Metastatic_paired_analysis	Prostate	NO
+HMF000589B	Metastatic_paired_analysis	Prostate	NO
+HMF000195B	Metastatic_paired_analysis	Breast	NO
+HMF000195A	Metastatic_paired_analysis	Breast	NO
+HMF002591B	Metastatic_paired_analysis	Skin	NO
+HMF002591A	Metastatic_paired_analysis	Skin	NO
+HMF002069A	Metastatic_paired_analysis	Urinary tract	NO
+HMF002069B	Metastatic_paired_analysis	Urinary tract	NO
+HMF000718A	Metastatic_paired_analysis	Breast	NO
+HMF000718B	Metastatic_paired_analysis	Breast	NO
+HMF002506A	Metastatic_paired_analysis	Skin	NO
+HMF002506B	Metastatic_paired_analysis	Skin	NO
+HMF002573B	Metastatic_paired_analysis	Breast	NO
+HMF002573A	Metastatic_paired_analysis	Breast	NO
+HMF002603B	Metastatic_paired_analysis	Skin	NO
+HMF002603A	Metastatic_paired_analysis	Skin	NO
+HMF003379B	Metastatic_paired_analysis	Prostate	NO
+HMF003379A	Metastatic_paired_analysis	Prostate	NO
+HMF001414B	Metastatic_paired_analysis	Skin	NO
+HMF001414A	Metastatic_paired_analysis	Skin	NO
+HMF000753A	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF000753B	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF001902B	Metastatic_paired_analysis	Breast	NO
+HMF001902A	Metastatic_paired_analysis	Breast	NO
+HMF000004B	Metastatic_paired_analysis	Skin	NO
+HMF000004A	Metastatic_paired_analysis	Skin	NO
+HMF000300A	Metastatic_paired_analysis	Skin	NO
+HMF000300B	Metastatic_paired_analysis	Skin	NO
+HMF002681B	Metastatic_paired_analysis	Skin	NO
+HMF002681A	Metastatic_paired_analysis	Skin	NO
+HMF002023B	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF002023A	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF002383B	Metastatic_paired_analysis	Skin	NO
+HMF002383A	Metastatic_paired_analysis	Skin	NO
+HMF002229A	Metastatic_paired_analysis	Biliary	NO
+HMF002229B	Metastatic_paired_analysis	Biliary	NO
+HMF001719A	Metastatic_paired_analysis	Urinary tract	NO
+HMF001719B	Metastatic_paired_analysis	Urinary tract	NO
+HMF001396B	Metastatic_paired_analysis	Testis	NO
+HMF001396A	Metastatic_paired_analysis	Testis	NO
+HMF000458C	Metastatic_paired_analysis	Prostate	NO
+HMF000458B	Metastatic_paired_analysis	Prostate	NO
+HMF001867C	Metastatic_paired_analysis	Prostate	NO
+HMF001867B	Metastatic_paired_analysis	Prostate	NO
+HMF000790A	Metastatic_paired_analysis	Prostate	NO
+HMF000790B	Metastatic_paired_analysis	Prostate	NO
+HMF002211B	Metastatic_paired_analysis	Urinary tract	NO
+HMF002211A	Metastatic_paired_analysis	Urinary tract	NO
+HMF002145A	Metastatic_paired_analysis	Prostate	NO
+HMF002145B	Metastatic_paired_analysis	Prostate	NO
+HMF000476A	Metastatic_paired_analysis	Breast	YES
+HMF000476B	Metastatic_paired_analysis	Breast	YES
+HMF000403A	Metastatic_paired_analysis	Breast	YES
+HMF000403B	Metastatic_paired_analysis	Breast	YES
+HMF001450B	Metastatic_paired_analysis	Prostate	NO
+HMF001450A	Metastatic_paired_analysis	Prostate	NO
+HMF000152A	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF000152B	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF001145A	Metastatic_paired_analysis	Breast	NO
+HMF001145B	Metastatic_paired_analysis	Breast	NO
+HMF000851A	Metastatic_paired_analysis	Breast	YES
+HMF000851B	Metastatic_paired_analysis	Breast	YES
+HMF000213B	Metastatic_paired_analysis	Kidney	NO
+HMF000213A	Metastatic_paired_analysis	Kidney	NO
+HMF001806A	Metastatic_paired_analysis	Prostate	NO
+HMF001806C	Metastatic_paired_analysis	Prostate	NO
+HMF002388A	Metastatic_paired_analysis	Kidney	NO
+HMF002388B	Metastatic_paired_analysis	Kidney	NO
+HMF000042A	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF000042B	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF000955A	Metastatic_paired_analysis	Unknown	NO
+HMF000955B	Metastatic_paired_analysis	Unknown	NO
+HMF000442C	Metastatic_paired_analysis	Unknown	NO
+HMF000442B	Metastatic_paired_analysis	Unknown	NO
+HMF001511A	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF001511B	Metastatic_paired_analysis	Bone/Soft tissue	NO
+HMF002782A	Metastatic_paired_analysis	Colon/Rectum	YES
+HMF002782B	Metastatic_paired_analysis	Colon/Rectum	YES
